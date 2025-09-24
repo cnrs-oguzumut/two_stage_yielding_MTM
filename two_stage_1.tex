@@ -459,19 +459,17 @@ w ({\bf x}; h)=\frac{1}{2}  \phi({\bf F} ({\bf x}; h)) J({\bf x},h),
 where $J$ is the determinant connecting local ($\bf z$)   and global ($\bf x$) coordinate systems (\textbf{ correct?}). 
  
 We illustrate in Fig \ref{fig_08} our computational mesh which  is  a 2D   lattice representing a scaled version of the  original atomic lattice; a representative  triangular  finite element is, for instance,   the element BAC adjacent to the node A.  This element connects  three nodes and therefore the index $a$  associated with this element takes three values  $a=1,2,3$. We effectively assume in the MTM that the energy associated with  the deformed element BAC depends on the three parameters:  the deformed lengths  of the bonds AB and AC and   the deformed value of the angle BAC. To obtain these dependencies we use the Cauchy Born rule. Behind it is the assumption  that the element deforms as if it was embedded into   an infinite lattice undergoing a global affine (homogeneous) deformation. The latter is   fully characterized by the same three parameters which we interpret as the components of the corresponding metric tensor $C_{11}$, $C_{22}$ and  $C_{12}$.
-
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.2\columnwidth]{figures_ordering/figure_06.pdf}
 \caption{Six triangular finite elements which are immediately adjacent to a generic   node $A$. }
 \label{fig_08}
 \end{figure}
-
 Finding  solution of an elastic problem implies  local minimization of the energy 
 \begin{equation}
 W=\int_{\Omega}w({\bf x}; h)  d\mathbf{x}, 
 \end{equation}
-which is prescribed on a triangulated  domain \(\Omega\).   The conditions of mechanical equilibrium, , formulated     in terms  of the first Piola-Kirchhoff stress tensor 
+which is prescribed on a triangulated  domain \(\Omega\).   The conditions of mechanical equilibrium, formulated   in terms  of the first Piola-Kirchhoff stress tensor 
 \begin{equation}
 \mathbf{P}= 2\mathbf{F} \mathbf{m} \frac{\partial w }{\partial \tilde{\bf C}}\mathbf{m}^T,
 \end{equation} 
@@ -495,7 +493,7 @@ length scale some aspects of a genuinely atomistic description are necessarily l
 The ensuing mathematical  problem can be solved numerically using  a quasi-Newton method accompanied by the Newton–Raphson (NR) "refinement" when the initial guess is too far from the solution for Newton–Raphson method to converge  ~\cite{Tadmor1996-qi}. It has the advantage of being computationally efficient as well as being able to handle nonconvexity of the problem by only dealing with positive-definite Hessian matrices. The numerical method performs the minimization of the energy functional  iteratively. In very general terms, it begins with an initial guess of $\boldsymbol{u}(\boldsymbol{x})$ and a given approximation of the \textit{inverse} Hessian matrix $H_0$ as well as known optimal  number $m$ of BFGS corrections to be stored. An iteration first finds a minimization direction by performing a (one-dimensional) line search and finding the optimal step-size. Next, the solution is updated along with other quantities necessary to compute the inverse Hessian matrix of the next step.  The algorithm differs from BFGS in the way it handles the inverse Hessian matrix, which is approximated/updated by $m$ corrections at each iteration.
 
  More specifically, in our numerical experiments to find ${\bf u}^a$, we first use the L-BFGS algorithm~\cite{Bochkanov2013-lk} which builds a positive definite linear approximation allowing one to make a quasi-Newton step lowering the total energy.   The   iterations continue till  the increment  in the advance of the total energy   becomes sufficiently small. The obtained approximate solution is then   used as an initial guess  ${\bf w}^a$ to solve, using LU factorization~\cite{Sanderson2016-ht,itensor},  the  equations for the correction  $\text{d}{\bf w}^a$
- around   an initial guess for the displacement field $${\bf u}^a={\bf w}^a +  \text{d}{\bf w}^a$$.  The corresponding  system of linear equations can be written in the form
+ around   an initial guess for the displacement field $${\bf u}^a={\bf w}^a +  \text{d}{\bf w}^a.$$  The corresponding  system of linear equations can be written in the form
    \begin{equation}
  K^{ab}_{ij}dw_j^b+R_i^a =0,
  \end{equation}
@@ -584,8 +582,44 @@ in the MTM approach, such coupling is automatic  as the model has  assess to the
 
  \section{Numerical experiments}
 
- 
-   
+\subsection{Periodic Boundary Conditions with Macroscopic Deformation}
+
+\textcolor{blue}{To simulate an effectively infinite crystal under macroscopic deformation while maintaining computational tractability, we implement periodic boundary conditions (PBCs) through domain replication. The computational domain $\Omega_0$ with dimensions $L_x \times L_y$ is replicated in all spatial directions to create a periodic array of domains.}
+
+\subsubsection{Translation Vectors and Domain Geometry}
+
+\textcolor{blue}{We define a set of translation vectors $\mathbf{t}_n$ that generate the periodic lattice of domains:
+$$\mathbf{t}_n = \begin{pmatrix} n_x L_x \\ n_y L_y \end{pmatrix}, \quad \mathbf{n} = (n_x, n_y) \in \{-1, 0, 1\}^2,$$
+where $\mathbf{n}$ represents the integer lattice coordinates. For the 9-domain implementation, we consider all translation vectors within the immediate neighborhood of the central domain.}
+
+\textcolor{blue}{Let $\mathbf{F}(t)$ denote the macroscopic deformation gradient tensor at time $t$. The position of any replicated domain relative to the central domain $\Omega_0$ is given by:
+$$\mathbf{R}_n = \mathbf{F} \cdot \mathbf{t}_n,$$
+where $\mathbf{R}_n$ represents the displacement vector of the origin of the domain corresponding to translation $\mathbf{t}_n$.}
+
+\subsubsection{Particle Position Mapping}
+
+\textcolor{blue}{For a particle located at position $\mathbf{x}_i$ in the central domain $\Omega_0$, its periodic image corresponding to translation vector $\mathbf{t}_n$ is positioned at:
+$$\mathbf{x}_i^{(n)} = \mathbf{x}_i + \mathbf{R}_n = \mathbf{x}_i + \mathbf{F} \cdot \mathbf{t}_n.$$
+This ensures that the macroscopic deformation gradient is consistently applied across all periodic images, maintaining the correct strain field representation.}
+
+\subsubsection{Delaunay Triangulation and Triangle Selection}
+
+\textcolor{blue}{After establishing the positions of all particles across the nine domains (original domain $\Omega_0$ and its eight periodic images), we perform a Delaunay triangulation on the complete set of particles:
+$$\mathcal{P} = \{\mathbf{x}_i : i \in \mathcal{I}_0\} \cup \{\mathbf{x}_i^{(n)} : i \in \mathcal{I}_0, n \neq \mathbf{0}\},$$
+where $\mathcal{I}_0$ denotes the set of particle indices in the original domain and $\mathbf{0} = (0,0)$ corresponds to the null translation vector. This means we deal with the all particles in the original central domain
+and all periodic images of those particles in the 8 surrounding domains.}
+
+\textcolor{blue}{From the resulting triangulation $\mathcal{T}$, we select only the unique triangles that have at least one vertex belonging to the original domain $\Omega_0$. The initial selection of all triangles with at least one node connected to the original domain may introduce duplicated triangles due to the periodic replication. Therefore, we apply an additional filtering step to remove these duplicates and retain only unique triangles.
+This selection and filtering procedure ensures that:
+\begin{enumerate}
+\item Each triangle in the computational mesh is counted exactly once, eliminating redundancy from the periodic duplication
+\item All triangles connected to the original domain are included, maintaining proper connectivity across periodic boundaries
+\item The triangulation naturally incorporates the macroscopic deformation through the deformed positions of the periodic images
+\end{enumerate}
+}
+
+\textcolor{blue}{The selected set of triangles $\mathcal{T}_{\text{unique}}$ forms the computational mesh for the mesoscopic tensorial model calculations, preserving both the periodic boundary conditions and the consistency with the applied macroscopic deformation gradient $\mathbf{F}$.}
+
 In view of the pristine nature of our samples,  the initial phase of the deformation process,  starting at point $A$ in Fig. \ref{fig:02},   is necessarily  purely  elastic. During this stage, the  metric tensors  of all elements  remain  strictly  inside the elastic domain (Pitteri neighborhood). While the response of the crystal inside such a  domain could, in principle,  remain  homogeneous, the aﬃne deformation becomes   unstable way before its boundary is reached.  The implied purely elastic instability   is preceded by the   elastic softening  and the actual instability  takes place near the maximal load. The  corresponding critical value of the loading parameter $$\alpha=\alpha_c$$   (\textbf{ provide  the actual value of $\alpha_c$})  can be well approximated  if we assume that the instability is associated with the loss of  positive definiteness of  the acoustic tensor \eqref{Q}. As we have already mentioned, the corresponding Legandre-Hadamard  conditions \cite{Simpson1989,Grabovsky2013,Steigmann2023}, indicating that the equilibrium equations of continuum elasticity stop being strongly  elliptic   at the corresponding affine configuration, are represented by \eqref{F}.  However, in view of the finite element nature  of our actual problem the solution of  \eqref{F}  provides only an approximation of  the critical value of the loading parameter with  the corresponding correction being of order  $(h/L)^2=N^{-2}$.  Note also that in  view of an pristine   nature of the crystal, at the critical value of the loading parameter (point $B$ in Fig. \ref{fig:02}) all finite elements can be expected to  become unstable  simultaneously. This would lead  to a nonphysical highly unstable behavior    and therefore, to observe a generic response we had to regularize the problem by  adding  at the   onset of instability  a small amount of quenched  disorder which  was removed right after the instability  took place.
 
 
