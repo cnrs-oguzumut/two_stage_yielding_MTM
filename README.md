@@ -12,26 +12,28 @@ This paper demonstrates that quasi-brittle yielding, typically associated with w
 
 ## Repository Structure
 .
-├── two_stage_1.tex          # Main LaTeX document
-├── formatted.bib            # Bibliography file
-├── figures_ordering/        # Figure directory
-│   ├── figure_01.png        # Poincaré disk tessellation
-│   ├── figure_02.png        # Strain-energy visualization (tessellated)
-│   ├── figure_03.png        # Strain-energy visualization (continuous)
-│   ├── figure_04.pdf        # Finite element schematic
-│   ├── figure_05.pdf        # MTM approach diagram
-│   ├── figure_06.pdf        # Triangular elements illustration
-│   ├── figure_07.pdf        # First stage yielding response
-│   ├── figure_08.pdf        # Quasi-glassy state emergence
-│   ├── figure_09.pdf        # Post-yield deformation history
-│   ├── figure_10.pdf        # Microplasticity regime
-│   ├── figure_11.pdf        # Second stage yielding (part 1)
-│   ├── figure_12.pdf        # Second stage yielding (part 2)
-│   ├── figure_13.pdf        # Grain boundary formation
-│   ├── figure_14.pdf        # Multi-grain texture
-│   ├── figure_15.pdf        # Mature shear bands
-│   ├── figure_16.pdf        # Avalanche configurations
-│   └── figure_17.pdf        # Energy drop statistics
+├── two_stage_1.tex
+├── formatted.bib
+├── README.md
+├── figures_ordering/
+│   ├── figure_01.png
+│   ├── figure_02.png
+│   ├── figure_03.png
+│   ├── figure_04.pdf
+│   ├── figure_05.pdf
+│   ├── figure_06.pdf
+│   ├── figure_07.pdf
+│   ├── figure_08.pdf
+│   ├── figure_09.pdf
+│   ├── figure_10.pdf
+│   ├── figure_11.pdf
+│   ├── figure_12.pdf
+│   ├── figure_13.pdf
+│   ├── figure_14.pdf
+│   ├── figure_15.pdf
+│   ├── figure_16.pdf
+│   └── figure_17.pdf
+└── (and other files as needed)
 └── README.md               # This file
 
 ## Compilation Requirements
