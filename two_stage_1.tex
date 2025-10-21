@@ -282,7 +282,7 @@ Similar   quasi-brittle  yield is  known to be characteristic    of  plastic res
   
 %  are  sometimes perceived as fundamentally different because dislocations, the main carriers of plastic deformations  crystals, are absent in amorphous solids. However, the  underlying elementary mechanical events  can be in both cases described  as  triggering of Eshelby-type shear eigenstrains \cite{Picard2004,Budrikis2017-ex,Cai2006-fe} and ultimately  behind both phenomena is an evolving elastic incompatibility   \cite{Moshe2015-rm,Baggioli2022-nx,Bowick2009-bl,Katanaev1992-kl,Sozio2020-tg}.
  
- Our conclusions are based  on a detailed study of  dislocation dynamics  in  a prototypical  square crystal  subjected to   quasistatic loading by shear strain applied  along one of the  slip directions. Our main tool is a  novel mesoscopic tensorial model  (MTM) of crystal plasticity representing a conceptual trade-off between continuum  and atomic descriptions~\cite{Salman2011,Salman2012b,Baggio2019,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}. Crucially, it   allows one  to  capture the  intermittent nature of  dislocation avalanches \cite{Weiss2021-tt,Weiss2015-eh}.  The ability of other   computational approaches to reproduce  the correct statistics of plastic fluctuations, while also accounting for large lattice rotations and adequately representing the crystallographic nature of lattice-invariant shears~\cite{Engel1986-tm,Michel2001,schwarzenberger1972classification,Bhattacharya2004,pitteri2002continuum}, remains rather limited~\cite{Arsenlis2007-oz,Zepeda-Ruiz2021-bm,Ponga2020-kd,Lafourcade2025-pc,Chan2010-qt,Salvalaglio2020-aw,Zhong2025-df,Javanbakht2016-dr,Beyerlein2016-av,Koslowski2002-dn,Wang:2003zh,Devincre2008-mw,Ispanovity2014-ra,Gomez-Garcia2006-zn,Po2014-qu,Lu2022-ai,Bertin2024-jw,Nasir-Tak2025-kq,Starkey2020-yv,Zhang2025-cm,Acharya2022-ur,Acharya2006-du,Rodney1999-em,Van-Koten2011-tt,Miller2002-pa,Zhang2018-in}. 
+ Our conclusions are based  on a detailed study of  dislocation dynamics  in  a prototypical  square crystal  subjected to   quasistatic loading by shear strain applied  along one of the  slip directions. Our main tool is a  novel mesoscopic tensorial model  (MTM) of crystal plasticity representing a conceptual trade-off between continuum  and atomic descriptions~\cite{Salman2011,Salman2012b,Baggio2019,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}. Crucially, it   allows one  to  capture the  intermittent nature of  dislocational avalanches \cite{Weiss2021-tt,Weiss2015-eh}.  The ability of other   computational approaches to reproduce  the correct statistics of plastic fluctuations, while also accounting for large lattice rotations and adequately representing the crystallographic nature of lattice-invariant shears\cite{Engel1986-tm,Michel2001,schwarzenberger1972classification,Bhattacharya2004,pitteri2002continuum}, remains rather limited  \cite{Arsenlis2007-oz,Zepeda-Ruiz2021-bm,Ponga2020-kd,Lafourcade2025-pc,Chan2010-qt,Salvalaglio2020-aw,Zhong2025-df,Javanbakht2016-dr,Beyerlein2016-av,Koslowski2002-dn,Wang:2003zh,Devincre2008-mw,Ispanovity2014-ra,Gomez-Garcia2006-zn,Po2014-qu,Lu2022-ai,Bertin2024-jw,Nasir-Tak2025-kq,Starkey2020-yv,Zhang2025-cm,Acharya2022-ur,Acharya2006-du,Rodney1999-em,Van-Koten2011-tt,Miller2002-pa,Zhang2018-in}. 
  
  
  The MTM approach is built on the fundamental assumption that mesoscale material elements are exposed to an effective globally periodic  energy landscape  accounting for lattice-invariant shears. From the perspective of such Landau-type continuum theory with an infinite number of equivalent energy wells \cite{Ericksen1970,ericksen1973loading,Ericksen1977,Ericksen1980,ericksen1989weak,parry1976elasticity,Parry1977,Parry1998,Folkins1991,Conti2004-sv,Salman2011,Salman2012b,Baggio2019,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}, plastically deformed crystal emerges as a multi-phase mixture of equivalent phases. While operating with engineering concepts of stress and strain MTM can  account  correctly not only   for long range elastic interactions of dislocations  but also for their  short range interactions  including     topological changes such as  nucleation and  annihilation.  Some conceptually  related  approaches can be found in \cite{Denoual2010,Gao2019,Gao2020,Gao2020a,Gao2020f,Gao2020c,Biscari2015-ci,Arbib2020,Arbib2023,Arbib2025}.
@@ -368,10 +368,6 @@ Similar   quasi-brittle  yield is  known to be characteristic    of  plastic res
 \label{fig:atlas0}
 \end{figure}  
 
-%\subsection{Elastic energy}
-
-%\emph{The model.} 
-%In  the MTM   the role of the order parameter  is played by the metric tensor  characterizing local deformation.   
 Suppose that  
 %\begin{equation}
 $\bf y = \bf y( \bf x)$
@@ -395,7 +391,10 @@ In view  of this global  symmetry, the surface $\det{\bf C}=1$  in the 3D space 
 %(Poincar\'e) 
 unit (Poincar\'e) disk, see Fig.~\ref{fig:atlas0}   where  the equivalent square lattices are indicated by small black squares.
 % while red dots denote equivalent triangular (hexagonal) lattices. 
- The structure of the minimal tensorial periodicity domain $\mathscr D$ is discussed in \cite{SM};  if the the energy density  is known in one of such   domains, it can be extended to the whole configurational space by symmetry.
+ The structure of the minimal tensorial periodicity domain $D$, 
+ %which is known in the mathematical literature on modular forms as a 'fundamental domain', 
+   is discussed in \cite{SM};  if the the energy density  is known in one of such   domains, it can be extended to the whole configurational space by symmetry.
+
  
 \begin{figure}[h!]
 \begin{center}
@@ -443,7 +442,7 @@ $ {\bf u}(\alpha,{\bf x})= (\bar{\bf F}(\alpha )-\mathbb{1}){\bf x} ,$
  %\begin{equation} \label{F}
   %$\bar{\bf F}(\alpha)=\begin{bmatrix} 1  & \alpha \\ 0 & 1 \end{bmatrix}$
   %\end{equation}
-Such loading was chosen to represent  simple shear along one of  the principal slip direction   with shear amplitude $\alpha$  serving as the loading parameter. 
+Such loading was chosen to represent  simple shear along one of the the principal slip direction   with shear amplitude $\alpha$  serving as the loading parameter. 
  By changing this parameter in increments of order $10^{-6}$  we  advanced   the  loading, and after each increment   the  displacement field was updated  by  the energy minimization algorithm.  
  
  
@@ -693,15 +692,14 @@ Colors indicate the magnitude of strain-energy  density.The inset shows a single
 %\emph{Statistics of avalanches. } 
 
 
-We  turn next to the study of the statistical structure  of plastic fluctuations which are known to represent  an important window into  the mechanical  response of crystals undergoing plastic flow \cite{Papanikolaou2017-ld,Weiss2015-eh,Zaiser2006-gk,Tarp2014-ro,Miguel2006-wd,Alava2014,Sethna2017}. In amorphous solids  
-   the probability distribution of the energy drops associated with individual  avalanches in both  pre-yield   and post-yield regimes  is represented by   power laws of the form 
-%\begin{equation}
-$P(x)  \sim  x^{-\epsilon}e^{\lambda x}.$ 
-%\end{equation} 
-with the same exponent $\epsilon$ but different values of  the  cut-off parameter $\lambda $  \cite{Tyukodi2016-dv,Budrikis2017-ex,Lerner2018-ue,Ozawa2022-xb}. Our analysis, illustrated in Fig. \ref{fig:energy_drops},  shows  that also in crystal plasticity 
-the statistics of  both pre- and post- yield  avalanches is basically of the same type. Specifically, we obtained  a power law range  extending over up to six decades with  pre-yield and post-yield energy distributions sharing the same  exponent  $\epsilon = 1.0$. One can conclude that, similar to the case of well-annealed glasses  \cite{Papanikolaou2017-ld,Weiss2021-tt,Sethna2001,Ispanovity2014-ra,Alava2014,Lehtinen2016-qy},  the  scaling behavior  remains basically unchanged across the  yielding transition despite the fact that we observe  hardening in the pre-yield regime  and stationary plastic flow in the post-yield regime.  
+The value of the power-law exponent $\epsilon = 1.0$ is  a signature of an archetypically ‘‘wild’’ crystal plasticity in the sense of   \cite{Weiss2015-eh}. The same value  was obtained in  discrete dislocation dynamics studies of disorder-free 2D samples containing a fixed number of preexisting  \cite{Ispanovity2014-ra,PhysRevMaterials.5.073601} and  also recorded in numerical experiments on  pristine crystals  using a scalar version of the MTM  \cite{Zhang2020-ax}. The exponent $\epsilon = 1.0$  has been previously  interpreted in crystal  plasticity framework   as representing either dislocation jamming or self-induced glassiness  \cite{Ovaska2015-yb,Lehtinen2016-qy,Zhang2016-gh,Ruscher2019-us}.   The latter conclusion is corroborated by the  fact that  the same value of the exponent is routinely recorded in  the studies of plastic flows in structural glasses   ~\cite{tyukodi2019avalanches,Ferrero2019-rx,Shang2020}.
 
-The invariance of the exponent  $\epsilon$ across the yielding transition  suggests that while the spatial organization of plastic events changes drastically during the    yielding transition from local and non-cooperative to global and collective, the statistical distribution of   events in the critical regime  remains insensitive to these microscopic details revealing a bigger picture of the global  organization of the underlying energy landscape \cite{Shang2020,oyama2021-rf}. The universality of the obtained result is also corroborated by the  similar findings in a  version of MTM operating with completely different choice of the energy density function \cite{perchikov2024}.
+A  theoretical understanding of  the relation between the emergence of the power law exponent value $\epsilon = 1.0$ and the structure of the underlying energy  landscapes has been developed in   the theory  of  spin glasses, where  it was shown  
+that the hierarchical (ultrametric) organization of energy wells in the phase space results in an intermittent, scale-free response to quasistatic deformation \cite{Franz2017-fa,Muller2015,Berthier2019-dm,Dennis2020-jb} and  that  in the mean-field limit the   associated distribution of   energy avalanches  must be necessarily of a  power law with  $\epsilon = 1.0$.  In this context it was also understood that the reason behind  this value of the exponent  is the  marginal stability of the system  \cite{Franz2017-fa,Pazmandi1999-lb,Le-Doussal2012-kv}.
+
+
+  Since glasses represent liquids  at  a quenching threshold, their   marginal stability is not surprising, for instance,   similar   marginality is  exhibited by  jammed states of granular matter.  If such marginally rigid systems are mechanically driven, the proximity to unstable   modes makes the mechanical response  inherently intermittent effectively mixing  statics (stability) and dynamics (instability). 
+Recall that our 'quasi-amorphous crystal' also  emerged from arrested dynamics  with the system being   stabilized   close to the threshold of mechanical stability. One can argue that  in such cases the  self-generated disorder  brings  the system  directly from solid to glassy state. Since we observe the same value of exponent $\epsilon = 1.0$ in both pre- and post-yield regimes, we may conclude that the achieved marginality is not even affected by the quasi-brittle  yielding event. This may mean that   the brittle  yielding   does not compromise   the global organization of the emerged energy landscape while obviously  affecting the reachability of its different subdomains \cite{Regev2017-ks,regev2018critical,regev2021topology}.
 
 
 
@@ -769,7 +767,7 @@ that the hierarchical (ultrametric) organization of energy wells in the phase sp
 
 
   Since glasses represent liquids  at  a quenching threshold, their   marginal stability is not surprising, for instance,   similar   marginality is  exhibited by  jammed states of granular matter.  If such marginally rigid systems are mechanically driven, the proximity to unstable   modes makes the mechanical response  inherently intermittent effectively mixing  statics (stability) and dynamics (instability). 
-Recall that our 'quasi-amorphous crystal' also  emerged from arrested dynamics  with the system being   stabilized   close to the threshold of mechanical stability. One can argue that  in such cases the  self-generated disorder  brings  the system  directly from solid to glassy state. Since we observe the same value of exponent $\epsilon = 1.0$ in both pre- and post-yield regimes, we may conclude that the achieved marginality is not even affected by the quasi-brittle  yielding event. This may mean that   the brittle  yielding   does not compromise   the global organization of the emerged energy landscape while obviously  affecting the reachability of its different subdomains \cite{Regev2017-ks}.
+Recall that our 'quasi-amorphous crystal' also  emerged from arrested dynamics  with the system being   stabilized   close to the threshold of mechanical stability. One can argue that  in such cases the  self-generated disorder  brings  the system  directly from solid to glassy state. Since we observe the same value of exponent $\epsilon = 1.0$ in both pre- and post-yield regimes, we may conclude that the achieved marginality is not even affected by the quasi-brittle  yielding event. This may mean that   the brittle  yielding   does not compromise   the global organization of the emerged energy landscape while obviously  affecting the reachability of its different subdomains \cite{Regev2017-ks,regev2018critical,regev2021topology}.
  
 %
 %
