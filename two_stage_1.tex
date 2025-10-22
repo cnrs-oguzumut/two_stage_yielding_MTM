@@ -255,108 +255,19 @@ Quasi-brittle yielding is a salient feature  of well-annealed glassy   materials
 \maketitle
 \noindent
 
-% \section{Introduction}
-
-% It can be characterized as a  more or less abrupt loss of elastic rigidity and it also marks a transition from largely reversible to strongly irreversible deformation. For a  crystal  subjected to quasi-static loading in a hard device an intriguing   related question is why the memory of  local atomic neighborhoods, ensuring elastic or quasi-elastic response,  suddenly deteriorates allowing  the system  to abruptly sever a  link with its deformation history. 
-% 
-%\emph{Introduction.} 
 The complexity of  plastic yield  in  crystalline  solids is exacerbated by the fact that  both pre- and  post-yield plastic flows often  exhibit   intermittent fluctuations and  scale-free  organization of dislocations ~\cite{Zaiser2006-gk,jian2024prediction,ortiz1999plastic,Papanikolaou2017-ld,kosterlitz2016kosterlitz,khantha1997mechanism,hochrainer2014continuum,langer2019statistical,Derlet2016-mp,ispanovity2010submicron}. These features  are also typical for amorphous plasticity  ~\cite{kamani2024brittle,berthier2024yielding,Shang2020,shang2024yielding,singh2020brittle,richard2021brittle,pollard2022yielding,Lin2014-bx,parisi2017shear,derlet2021micro}. To build a  conceptual link between the two phenomena,  we  study  in this paper a relatively transparent prototypical example of a  2D square crystal  subjected to quasistatic loading.   
 
-%here we  report a striking similarity between plasticity  of pristine  crystals and quasi-brittle yield in  glassy materials  
- 
-% The goal of the present paper is to  address these questions in a  narrow but  fundamental setting  of  quasi-brittle  plastic yielding of  pristine (perfect,  defect free) crystals~\cite{Sethna2017,ghimenti2024shear,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}. 
-%The peculiarity of this particular setting  is related to the fact that, rather surprisingly,  very similar quasi-brittle  plastic yielding  is  also a salient feature  of some  glassy materials which lack any crystal symmetry and are structurally indistinguishable from liquids~\cite{kamani2024brittle,berthier2024yielding,Shang2020,shang2024yielding,singh2020brittle,richard2021brittle,pollard2022yielding,Lin2014-bx,parisi2017shear,derlet2021micro}.
 
-%To build a conceptual bridge  between plasticity of crystals and glasses, 
  To prepare a 'generic' crystal we start with a  pristine dislocation-free configuration  and bring it to the point of mechanical instability which is resolved through   massive dislocation nucleation.  We argue that such 'preparation' effectively converts  the atomic configuration from  crystalline  to quasi-amorphous    \cite{Lehtinen2016-qy,Sethna2017,Ovaska2017}.
 We show that the  subsequent   plastic flow  begins with a   hardening stage,    which involves   a superposition of  spatially localized dislocation rearrangements.  Such  'microplasticity' regime   is terminated    abruptly with a   quasi-brittle  system-size event    
   leading to  the   formation of  multi-grain pattern  arranged in the form of  global  shear bands. The post-yield plastic flow is characterized by  a stress plateau with superimposed fluctuations representing broadly distributed intermittent dislocation  avalanches.  
 Similar   quasi-brittle  yield is  known to be characteristic    of  plastic response of well-annealed glasses  \cite{Nicolas2018-iy,Rodney2011-ld,popovic2018elastoplastic,Tanguy2021-ap,TALAMALI2012275, Parley2024-jb,karmakar2010statistical,ozawa2018random,Divoux2024-ks}.  While the implied correspondence   may look surprising in view of the absence of dislocations in amorphous plasticity,  we recall that  behind both phenomena is an evolving elastic incompatibility   \cite{Moshe2015-rm,Baggioli2022-nx,Bowick2009-bl,Katanaev1992-kl,Sozio2020-tg} with  underlying elementary mechanical events   represented by  shear eigenstrains \cite{Picard2004,Budrikis2017-ex,Cai2006-fe}.
 
 
-%Our conclusions are based on a detailed study of dislocation dynamics in a prototypical square crystal subjected to quasi-static loading by shear strain applied along one of the slip directions. Our main tool is a novel mesoscopic tensorial model (MTM) of crystal plasticity representing a conceptual trade-off between continuum and atomic descriptions~\cite{Salman2011,Salman2012b,Baggio2019,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}. Crucially, it allows one to capture the intermittent nature of dislocation avalanches \cite{Weiss2021-tt,Weiss2015-eh}. In contrast, other computational approaches struggle to simultaneously reproduce the correct statistics of plastic fluctuations, account for large lattice rotations, and adequately represent the crystallographic nature of lattice-invariant shears \cite{Engel1986-tm,Michel2001,schwarzenberger1972classification,Bhattacharya2004,pitteri2002continuum,Arsenlis2007-oz,Zepeda-Ruiz2021-bm,Ponga2020-kd,Lafourcade2025-pc,Chan2010-qt,Salvalaglio2020-aw,Zhong2025-df,Javanbakht2016-dr,Beyerlein2016-av,Koslowski2002-dn,Wang:2003zh,Devincre2008-mw,Ispanovity2014-ra,Gomez-Garcia2006-zn,Po2014-qu,Lu2022-ai,Bertin2024-jw,Nasir-Tak2025-kq,Starkey2020-yv,Zhang2025-cm,Acharya2022-ur,Acharya2006-du,Rodney1999-em,Van-Koten2011-tt,Miller2002-pa,Zhang2018-in}.
  
 Our conclusions are based  on a detailed study of  dislocation dynamics  in  a prototypical  square crystal  subjected to   quasi-static loading by shear strain applied  along one of the  slip directions. Our main tool is a  novel mesoscopic tensorial model  (MTM) of crystal plasticity representing a conceptual trade-off between continuum  and atomic descriptions~\cite{Salman2011,Salman2012b,Baggio2019,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}. Crucially, it   allows one  to  capture the  intermittent nature of  \textcolor{blue}{dislocation} avalanches \cite{Weiss2021-tt,Weiss2015-eh}.  \textcolor{blue}{In contrast, other computational approaches~\cite{Arsenlis2007-oz,Zepeda-Ruiz2021-bm,Ponga2020-kd,Lafourcade2025-pc,Chan2010-qt,Salvalaglio2020-aw,Zhong2025-df,Javanbakht2016-dr,Beyerlein2016-av,Koslowski2002-dn,Wang:2003zh,Devincre2008-mw,Ispanovity2014-ra,Gomez-Garcia2006-zn,Po2014-qu,Lu2022-ai,Bertin2024-jw,Nasir-Tak2025-kq,Starkey2020-yv,Zhang2025-cm,Acharya2022-ur,Acharya2006-du,Rodney1999-em,Van-Koten2011-tt,Miller2002-pa,Zhang2018-in} struggle to simultaneously reproduce the correct statistics of plastic fluctuations, account for large lattice rotations, and adequately represent the crystallographic nature of lattice-invariant shears~\cite{Engel1986-tm,Michel2001,schwarzenberger1972classification,Bhattacharya2004,pitteri2002continuum}}.
-%The ability of other   computational approaches to reproduce  the correct statistics of plastic fluctuations, while also accounting for large lattice rotations and adequately representing the crystallographic nature of lattice-invariant shears\cite{Engel1986-tm,Michel2001,schwarzenberger1972classification,Bhattacharya2004,pitteri2002continuum}, remains rather limited  \cite{Arsenlis2007-oz,Zepeda-Ruiz2021-bm,Ponga2020-kd,Lafourcade2025-pc,Chan2010-qt,Salvalaglio2020-aw,Zhong2025-df,Javanbakht2016-dr,Beyerlein2016-av,Koslowski2002-dn,Wang:2003zh,Devincre2008-mw,Ispanovity2014-ra,Gomez-Garcia2006-zn,Po2014-qu,Lu2022-ai,Bertin2024-jw,Nasir-Tak2025-kq,Starkey2020-yv,Zhang2025-cm,Acharya2022-ur,Acharya2006-du,Rodney1999-em,Van-Koten2011-tt,Miller2002-pa,Zhang2018-in}.
-
 
 \textcolor{blue}{The MTM approach assumes that mesoscale material elements experience an effective periodic energy landscape accounting for lattice-invariant shears. Within this Landau-type continuum framework with infinitely many equivalent energy wells \cite{Ericksen1970,ericksen1973loading,Ericksen1977,Ericksen1980,ericksen1989weak,parry1976elasticity,Parry1977,Parry1998,Folkins1991,Conti2004-sv,Salman2011,Salman2012b,Baggio2019,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}, plastically deformed crystals emerge as multi-phase mixtures of equivalent phases. Despite operating with engineering concepts of stress and strain, MTM correctly captures both long-range elastic interactions between dislocations and their short-range interactions, including topological changes such as nucleation and annihilation \cite{Denoual2010,Gao2019,Gao2020,Gao2020a,Gao2020f,Gao2020c,Biscari2015-ci,Arbib2020,Arbib2023,Arbib2025}.}
-
-%The MTM approach is built on the fundamental assumption that mesoscale material elements are exposed to an effective globally periodic  energy landscape  accounting for lattice-invariant shears. From the perspective of such Landau-type continuum theory with an infinite number of equivalent energy wells \cite{Ericksen1970,ericksen1973loading,Ericksen1977,Ericksen1980,ericksen1989weak,parry1976elasticity,Parry1977,Parry1998,Folkins1991,Conti2004-sv,Salman2011,Salman2012b,Baggio2019,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}, plastically deformed crystal emerges as a multi-phase mixture of equivalent phases. While operating with engineering concepts of stress and strain MTM can  account  correctly not only   for long-range elastic interactions of dislocations  but also for their  short-range interactions  including     topological changes such as  nucleation and  annihilation.  Some conceptually  related  approaches can be found in \cite{Denoual2010,Gao2019,Gao2020,Gao2020a,Gao2020f,Gao2020c,Biscari2015-ci,Arbib2020,Arbib2023,Arbib2025}.
- 
-%  In addition to the overall description of plastic yield at the level of stress-strain relations, the MTM approach can  capture more  subtle  effects  which depend crucially on the interplay between short and long range interactions among  dislocations. An important effect of this type, which was for us of particular interest,  is the emergence of  intermittent  dislocational avalanches. 
- 
-% Plastic yield can then be interpreted as an escape from the reference energy well, and plastic mechanisms can be linked to low-energy valleys in the energy landscape.  Despite its conservative appearance, the MTM approach is fundamentally dissipative with  dry friction  dissipation emerging as an averaged  description of an overdamped athermal dynamics in a rugged energy landscape.  As we explain in the paper, the internal cutoff length scale is brought into the MTM by the assumption that a mesoscopic element (cluster of atoms) deforms homogeneously with inhomogeneity emerging only at supra-mesoscopic scales. 
-
-%In comparison with other mesoscopic theories, 
-%
-% It can deal adequately with dislocation cores  while operating with engineering concepts of stress and strain and  accounting correctly not only   for long range elastic interactions of dislocations  but also for their  short range interaction  including   topological transitions involved in nucleation and annihilation. 
-%
-% 
-% The MTM can be viewed as Landau type theory with infinite number of equivalent energy wells   \cite{Ericksen1970,ericksen1973loading,Ericksen1977,Ericksen1980,ericksen1989weak,parry1976elasticity,Parry1977,Parry1998,Folkins1991,Conti2004-sv,Salman2011,Salman2012b,Baggio2019,Salman2021,perchikov2024,Baggio2023,Baggio2023-qu,Zhang2020-ax}.
-% 
- 
-
-%Behind the emergence of the continuum stresses and strains in MTM lies the spatial averaging over a mesoscopic length scale: the latter characterizes the size of a maximal cluster of atoms which can be assumed to deform homogeneously. The MTM belongs to the class of mesoscopic elasto-plastic  models  used in the studies of amorphous plasticity, but instead of using conventional Eshelby elastic propagator,  it deals directly with geometrically and physically nonlinear  elasticity of inhomogeneous solid bodies and instead of simplified description of plastic slip, it accounts adequately for crystallographically specific lattice invariant shears.  The resulting approach  has the advantage over DDD of describing without any special phenomenological assumptions, the  topological changes in dislocation configurations such as nucleation, annihilation and  interaction with obstacles, all  in a self-consistent manner and only relying on the  assumptions about the  inter-atomic potential. Most importantly, it allows one to resolve  scale-free dislocational avalanches, responsible for intermittent fluctuations accompanying steady plastic flows in low symmetry crystals.  We mention that various other  MTM-related  approaches have been also explored  in the literature  \cite{Denoual2010,Gao2019,Gao2020,Gao2020a,Gao2020f,Gao2020c,Biscari2015-ci,Arbib2020,Arbib2023,Arbib2025}.
-%
-%
-%
-
-%To deal with these important aspects of crystal plasticity we rely in this paper on a more recent  Landau-inspired  MTM  approach   representing a conceptual trade-off between continuum  and atomic descriptions. 
-
-%It can be viewed as an extension of the local QC model or as a tensorial version of the PFDD, accounting geometrically adequately for both large strains and large rotations. MTM describes faithfully short-range interactions between dislocations and  can deal with  anisotropic nonlinear elasticity. Moreover,  it resolves in continuum setting the full crystallographic symmetry, including lattice-invariant shears \cite{Engel1986-tm,Michel2001,schwarzenberger1972classification,Bhattacharya2004,pitteri2002continuum} .
-
-
-% \cite{Weiss2021-tt,Weiss2015-eh}
-
-
-%In both crystals and glasses the subsequent plastic flow is stationary with stress reaching a characteristic plateau. It remains to be said that the discussed behavior concerns model crystals with suppressed hardening. More specifically, 
-% 
-
-
-%In view of the implied crystal-glass analogy, we begin by mentioning  some facts about quasi-brittle plastic yield  in glassy amorphous systems.  It is known that  under quasi-static  strain control, such systems exhibit  initially an almost reversible nominally-elastic  response even though  the overall stress increase  is   occasionally interrupted  by small stress drops revealing highly localized quasi-plastic rearrangements.   At a  critical  strain  such  response  gives way to fully global  plastic deformation  leading to stress  saturation.  In this stationary regime, short elastic stages coexist with  stress drops caused by localized  plastic shear transformations which occasionally  also induce long-range system-spanning rearrangements.  The transition to this constant-stress regime, which  is the one usually  interpreted as plastic yielding, can be of two types.  In ductile yielding we observe  a continuous crossover towards a stress plateau with only small stress overshoot which can be stretched over a large strain range.  In contrast, quasi-brittle yielding involves catastrophic failure through the sudden formation of system-spanning localized shear bands. 
-
-
-%  It was shown  that ductile  yielding takes place in  rapidly quenched glasses with  higher  degree of disorder while quasi-brittle yielding  is characteristic for more structured  highly annealed glass samples.  In the case of glasses,  such bi-modal yielding behavior  was successfully  reproduced numerically  using  prototypical elasto-plastic models in which  individual  linear elastic elements  could yield above some critical stress   triggering similar instabilities in other elements \cite{Nicolas2018-iy,Rodney2011-ld,popovic2018elastoplastic,Tanguy2021-ap,TALAMALI2012275}. 
-%Some theoretical approaches have also been advanced to supported these empirical findings \cite{Parley2024-jb,karmakar2010statistical,ozawa2018random,Divoux2024-ks}. 
-
-% Our main tool is a   mesoscopic tensorial model   representing a conceptual trade-off between continuum  and atomic descriptions.  Crucially, it   allowing one  to  reproduce  intermittent nature of  dislocational avalanches.
-%  
-%As we have already mentioned, the main goal of the present  paper is to  extend the obtained  understanding of quasi-brittle yielding from amorphous  to crystal plasticity. 
-
-
-
-
-
-% behind the propagation  of individual dislocations  and behind the local advance of amorphous plasticity by  shear transformation zones, are basically the same and can be in both cases described  as  triggering of Eshelby-type shear eigenstrains \cite{Picard2004,Budrikis2017-ex,Cai2006-fe}.
-%Moreover, behind both amorphous and crystal plasticity is the evolution of elastic incompatibility which can be  characterized in both cases by elastic curvature induced by the associated metric tensor \cite{Moshe2015-rm,Baggioli2022-nx,Bowick2009-bl,Katanaev1992-kl,Sozio2020-tg}. 
-
- 
-
-
-%In building a connection between crystalline and amorphous plasticity,  the  first challenge is to choose a relevant modeling framework which would   describe  adequately  crystal dislocations while being still compatible with the  modeling language  of  amorphous plasticity.  It is clear that engineering crystal plasticity, which  is  formulated within classical continuum framework  and relies on macroscale phenomenological constitutive relations, is not appropriate for this purpose since even dislocation cores there are not resolved. Numerous computational alternatives to continuum plasticity have been developed ranging from molecular dynamics (MD) \cite{Arsenlis2007-oz,Zepeda-Ruiz2021-bm,Ponga2020-kd,Lafourcade2025-pc} and similarly microscopic phase-field crystal method (PFC) \cite{Chan2010-qt,Salvalaglio2020-aw,Zhong2025-df} to the more coarse-grained phase field dislocation dynamics (PFDD), \cite{Javanbakht2016-dr,Beyerlein2016-av,Koslowski2002-dn,Wang:2003zh},  discrete dislocation dynamics (DDD), \cite{Devincre2008-mw,Ispanovity2014-ra,Gomez-Garcia2006-zn,Po2014-qu,Lu2022-ai,Bertin2024-jw,Nasir-Tak2025-kq} and, continuum dislocation dynamics (CDD) \cite{Starkey2020-yv,Zhang2025-cm,Acharya2022-ur,Acharya2006-du}. 
-%The multi-scale quasi-continuum model (QC) \cite{Rodney1999-em,Van-Koten2011-tt,Miller2002-pa,Zhang2018-in}. 
-%attempted to bridge all the scales while fully comprehensibly accounting for each of them. A detailed discussions of strengths and shortcomings of all these approaches can be found in \cite{Salman2021,perchikov2024,Baggio2023-qu}. 
-%
-%They were all successful in addressing particular time and length scales, with higher-scale models (more coarse-grained) relying on input from lower-scale models (less coarse-grained). However,  the ability of the existing approaches to capture the correct statistics of plastic fluctuations, while also accounting for large lattice rotations and adequately representing the crystallographic nature of lattice-invariant shears, remains rather limited \cite{Weiss2021-tt,Weiss2015-eh}
-%
-
-
-
- 
-
-
-%In our study of the phenomenon of quasi-brittle yielding of pristine model crystals,  we use  the most simple but still  non-trivial   setting. Specifically, to simulate athermal quasistatic loading of perfect square crystals in simple shear, we use the 2D  MTM approach, which is thoroughly reviewed   to make the presentation fully self contained. As we have already mentioned, our main finding is the two stage structure of plastic yielding.
-%The   first stage is a nonlinear elastic instability of a homogeneous crystal which involves dramatic  proliferation of dislocations  and effectively transforms an ideal crystal into a quasi-amorphous solid. The subsequent deformation of such 'primed' crystal is strongly reminiscent of quasi-brittle plastic yield of a well annealed glass. 
-%
-%It involves a 'microplasticity'  stage which ends abruptly with a formation of  system spanning grain boundaries. The corresponding post-(second)yield plastic deformation closely resembles  amorphous plastic flow which is sometimes interpreted as a regime of extended criticality.  It is marked by the formation of a stress plateau and involves intermittent  avalanche type rearrangements of  dislocational patterns which can be both local and global.  In parallel, to what is known about plasticity of glassy systems, here  we also discover that both pre- and post-(second) yield  avalanches exhibit power law statistics with matching exponents indicative of  marginal stability. 
-
-%The rest of the paper is organized as follows. In Section 2 we review  the main concepts of the MTM approach. The macroscopic results of our numerical experiments are summarized in Section 3. Statistical analysis of fluctuations is presented in Section 4. The last Section 5 contains our conclusions and indicates some open problems.
-%
-%
-%\section{The model}
-
-
 
 \begin{figure}[h!]
 \centering
@@ -407,29 +318,12 @@ unit (Poincar\'e) disk, see Fig.~\ref{fig:atlas0}   \textcolor{red}{where  the e
 \end{figure} 
 
 In our numerical experiments we used  the simplest  function  $\phi(\bf C)$ with required periodicity  discussed in \cite{SM}. In Fig. \ref{fig:atlas1}  we illustrate the corresponding  multi-well  energy landscape with   bottoms of the  wells corresponding to lattice invariant deformations.  One can show  that   such a landscape contains   a network of low energy valleys along the directions representing plastic 'mechanisms', simple shears parallel to crystallographic slip planes. Along these valleys   the   energy wells  correspond  to the equivalent replicas of the reference square  lattice. 
-%  furnished  by rank one deformation gradient tensors  representing lattice invariant simple shears. Instead, pure shear deformations  lead to extremely large elastic energy levels (not visible in Fig. \ref{fig:atlas1} because of truncation in the vertical direction).
-
- 
- % in the configurational space of metric tensors $\bf C$ with $\det{\bf C}=1$. 
-%  
-%  This implies that such energy density is a multi-well function of tensorial parameter 
-%  
-%   This implies that such energy density is a multi-well function of tensorial parameter with  the bottoms of the energy wells corresponding to lattice invariant deformations. 
-%   
-   
-  
-
- 
-
-%\subsection{Finite element representation}
-%\label{subsec:MTM_numerical_method}
 
 The presence of a complex system of energy barriers separating individual quantized lattice invariant shears makes the function $\phi(\mathbf{C})$ highly nonconvex. Therefore,  as in every Landau type continuum theory, the corresponding  scale free    problem is   highly degenerate. Instead of conventional Ginzburg-type   gradient regularization,  we  introduce in MTM   a uniform mesoscale grid and attribute   elastic  response  to   discrete   elements  whose linear size $h$ is then viewed as a  physical parameter of the model.  In other words,  we  reduce  the space of admissible deformations to a finite dimensional set of compatible, piece-wise affine mappings, see  \cite{SM} for details. 
 
 
 It is clear that the ensuing mechanically driven system will experience a rich repertoire of instabilities. In particular, under quasistatic loading conditions the incremental elastic energy minimization will lead to a succession \textcolor{blue}{of} jump discontinuities representing elastic \textcolor{blue}{branch} switching events. The corresponding energy losses will then mimic dissipative processes which will merge in the continuum limit producing what is known as \textcolor{blue}{rate-independent} plasticity \cite{Puglisi2005-lg}.
 
-% It is clear that  the  ensuing mechanically driven   system   will experience  a rich repertoire of   instabilities. In  particular, under quasistatic loading conditions  the incremental elastic energy minimization   will lead to a succession  jump discontinuities  representing elastic brunch switching events. The corresponding energy losses will then mimic dissipative processes which will  merge in  continuum limit producing what is known as  rate independent   plasticity \cite{Puglisi2005-lg}.
  
 \textcolor{blue}{In our numerical experiments, a square crystal sample was discretized with $N\times N$ nodes, which were triangulated into $2N^2$ finite elements. We used $N=400$.}
 The details of the incremental  energy minimization algorithm, the loading protocol and the boundary conditions are discussed  in \cite{SM}.  We loaded our athermal system quasi-statically by  applying the  affine displacement field 
@@ -441,61 +335,6 @@ $ {\bf u}(\alpha,{\bf x})= (\bar{\bf F}(\alpha )-\mathbb{1}){\bf x} ,$
 %${\bf F}(\alpha,\theta)={\bf I}+\alpha {\bf R}(\theta){\bf e}_1 \otimes{\bf e}_2$,
  where $ {\bf e}_ i$ is the orthonormal basis of the reference lattice. \textcolor{blue}{Such loading was chosen to represent simple shear along one of the principal slip directions, with shear amplitude $\alpha$ serving as the loading parameter. By changing this parameter in strain increments of order $10^{-6}$, we advanced the loading, and after each increment the displacement field was updated by the energy minimization algorithm.}
 
- %\begin{equation} \label{F}
-  %$\bar{\bf F}(\alpha)=\begin{bmatrix} 1  & \alpha \\ 0 & 1 \end{bmatrix}$
-  %\end{equation} 
-  
-%Such loading was chosen to represent  simple shear along one of the the principal slip direction   with shear amplitude $\alpha$  serving as the loading parameter. 
-% By changing this parameter in increments of order $10^{-6}$  we  advanced   the  loading, and after each increment   the  displacement field was updated  by  the energy minimization algorithm.  
- 
- 
- 
- 
-
-% 
-%Note that  that  despite its unusual, for plasticity theory, 'nonlinear elasticity' appearance, the MTM approach is conceptually very close to the classical continuum plasticity (CP). For instance, both theories effectively account for the complexity of energy landscape by introducing low-energy valleys describing plastic `mechanisms'. However, if in CP, additional phenomenological  relations are needed to handle the coupling between different `mechanisms' \cite{Franciosi1985-cu,Cuitino2021-ps,Roters2010-rm,Dawson2000-ca,Bertin2023}
-%in the MTM approach, such coupling is automatic  as the model has  assess to the the height   of the energy barriers separating different low-energy valleys. 
-%
-%It  also accounts for the barriers inside such valleys, moreover the   finite element representation, creates an even  broader set  of metastabile states.   
-
-%driven elastically in the ensuing 'bumpy' energy  landscape  
-
-
-
-
-%Such  instabilities are described implicitly by an overdamped model with relaxation time much shorter than the characteristic time of the loading. Due to quasi-static Therefore  the actual dissipative process is  inside the  local energy minimization protocol which hides   rate independent   plasticity behind the nonlinear elasticity appearance.
-%
-%which are ultimately behind the dissipative nature of the MTM
-
-
-%representing hard device loading.  Specifically,  we prescribed   on the  boundary of our square sample $\partial \Omega$ the   displacement field 
-
- 
-%\emph{Numerical setup. }
-
- 
-
-
- 
- % while  waiting  for the system stabilization after each loading increment. 
-
-% Specifically, after each incremental advance of the parameter   $\alpha$, the  displacement field was updated  by our  energy minimization algorithm   which used the solution from the previous step as the initial condition.  As we have seen, the energy minimization required a succession of iterations which is natural to interpret as a 'fast-time' overdamped dynamic process  taking place at a fixed value of the loading parameter. The latter is then interpreted as  evolving in a  'slow-time' scale. We effectively assumed full time scale separation allowing the 'fast-time' internal iterations to continue at the given value of the loading parameter  till  the value of  the energy increment reached below a sufficiently small threshold. After the termination of the energy relaxation stage, the loading parameter was  advanced again. 
-
-
-% \section{Numerical experiments}
-
-
- 
-
-%\emph{ Sample preparation.} 
-
-%,  starting at point $A$ in Fig. \ref{fig:22}, 
-%  is necessarily  purely  elastic. 
-%  During this stage, the  metric tensors  of all elements  remain  strictly  inside the elastic domain (Pitteri neighborhood). While the response of 
-%  the crystal inside such a  domain could, in principle,  remain  homogeneous, the aﬃne deformation becomes   unstable way before its boundary is reached.  
-%  
-%  The implied purely elastic instability   is preceded by the   elastic softening  and the actual instability  takes place near the maximal load. 
-%  
 \begin{figure}[ht!]
 \centering
 %\includegraphics[scale=.1]{figures_ordering/figure_073.pdf}
@@ -507,44 +346,6 @@ $ {\bf u}(\alpha,{\bf x})= (\bar{\bf F}(\alpha )-\mathbb{1}){\bf x} ,$
  
 \textcolor{blue}{To 'prepare' a generic sample we first loaded a pristine (defect-free) crystal. The associated purely elastic homogeneous deformation became unstable at a critical value of the loading parameter $\alpha=\alpha_c\approx0.138$, which is well approximated by the value corresponding to the loss of positive definiteness of the acoustic tensor, see \cite{Simpson1989,Grabovsky2013,Steigmann2023,SM}. The breakdown of an elastic state took the form of a major system-size inelastic deformation transforming a perfect crystal into a dislocation-rich quasi-amorphous configuration, see Fig.~\ref{fig:22} where the highest stress levels correspond to the location of dislocation cores. Note that the stabilization of the global dynamic restructuring process can be expected to produce only a marginally stable state.}
  
- %  In view of its highly disordered appearance, which of course does not indicate the absence of correlations,  and in the absence of other established choices,  we refer to this state as the 'amorphous crystal'. 
-  
-  
-    %  which we interpret as  'amorphous crystal'. 
-%     Specifically,  in the course of this  catastrophic  system-spanning event  the crystal   abruptly loses almost all its  accumulated elastic energy with stress   dropping almost to zero. The  deformation pattern  emerging after the stress drop (point $C$),  reveals   \emph{collective}   nucleation  of a large   number of dislocations $\approx 2000$. The latter were identified  using the classical Delaunay triangulation method  \cite{???}. It  allowed us  to detect  the coordination number anomalies and 5/7 coordination defect pairs were interpreted    as dislocations. 
- 
-  
-%  At the critical value of the loading parameter  all finite elements  become unstable  simultaneously  and to regularize the problem we   added  at the   onset of instability  a small amount of quenched  disorder which  was removed right after the instability  took place.
-  
-  
-   % (point $B$ in Fig. \ref{fig:02}) 
-   
-%   . This would lead  to a nonphysical highly unstable behavior    and therefore, to observe a generic response we had 
-  
-   
-  
-
-  
-%\begin{figure}[ht!]
-%\centering
-%\includegraphics[scale=.1]{figures_ordering/figure_073.pdf}
-%\caption{ ( \textbf{change the order of a and b. to be done later}) Priming of the pristine sample  and first stage yielding.  (a) Strain-energy density evolution during proportional loading. The  labeled configurations are A (initial), B (first yielding point), and C (post yield). The sharp drop of energy from B to C represents the transition from pure crystal to an 'amorphous crystal', see the text for more details. The subsequent microplasticity regime takes place at almost constant energy. Colors in the inset indicate the level of strain-energy density. (\textbf{correct? YES}). (b) The shear component of the Cauchy stress tensor field $\tau$ evolution along the same loading path. The instability takes place when the crystal reaches its  theoretical  strength threshold. The stress drops almost to zero opening the way to a hardening regime of 'microplasticity'.    The inset   illustrates the evolution of the corresponding dislocation density $\rho$. Here $N=400$. }  
-%\label{fig:02}
-%\end{figure}
-%The overall macroscopic mechanical response before and during the instability is illustrated in Fig. \ref{fig:02}(a,b). As we have already said, the loading process begins in point $A$ where at zero applied strain (\textbf{ explain which stress component is plotted  here? WE always plot The shear component of the Cauchy stress tensor field}) the pristine crystal is undeformed and has zero elastic energy. The configuration continues to be homogeneous as the loading increases and we observe the nonlinear softening elastic behavior dictated by the chosen nonlinear elastic potential. Near the load maximum of the stress-strain curve (point $B$) we introduce a small quenched disorder. The resulting pre-instability  highly stressed  configuration  is shown in Fig.  \ref{fig:22}(a) where we show the energy distribution inside  individual  finite elements.  Note that this state is almost homogeneous, in particular, the imposed small stress modulation does not result in the formation of dislocations. 
-  
-   
-%Our next Fig.  \ref{fig:22}(b)  shows the post-instability configuration  (point $C$). One can see that  
-
- 
-% , see Fig.\ref{fig:02} (a,b).   The inset in  Fig.\ref{fig:02}(a) shows the jump of the dislocation density $\rho$ from zero in both configurations $A$ and $B$ to a finite value in the state $C$.  
-
-
-  
-%  Note that through this type of 'preparation'   an artificial     defect-free    sample was converted  into a  generic    sample carrying  a realistic initial distribution of defects , see Fig. \ref{fig:22}(b).  
-%  We interpret such 'preparation'  as creating a realistic sample realistic because  the  defects  are not placed arbitrarily  but  emerge in the course of self organization. The corresponding  highly cooperative  event unfolded dynamically  in a fast computational time involved in local energy minimization. 
-%    In other words, one can say that  the achieved configuration is  the first stabilized state   reached by an overdamped relaxational dynamics involving   nucleation and annihilation of dislocations as well as the formation of dislocational entanglements. 
-    %It is then natural to expect that the attained  state is only marginally stable. 
  
 
 %\emph{Mechanical response. }
@@ -615,93 +416,6 @@ Since glasses represent liquids at a quenching threshold, their marginal stabili
 \end{figure}
 
 
-% where the dislocation number remains basically unchanged 
-
- 
- 
-% in both pre- and post-yield phases the statistics of  intermittent energy-dissipating  events  accompanying plastic
-%deformation  closely resembles the behavior of similar characteristics in well-annealed glasses  \cite{Papanikolaou2017-ld,Weiss2021-tt,Sethna2001,Ispanovity2014-ra,Alava2014,Lehtinen2016-qy}. Our   results are summarized  in Fig. \ref{fig:energy_drops} where we see that  
-%
-
-
- %,  where hardening disappears but  the dislocation number continuously increases. 
- 
-
-
-  
-
-  %statistics of such energy drops 
-
-
-
-%
-% Specifically we  will study   the probability distribution of the energy drops associated with individual  avalanches in  pre-yield regime (exemplified by the state  $E$ ) and post-yield regime  (exemplified by the state   $I$ ). 
-%
-%
-%
-%As we have seen,  after our 'preparation' a pristine crystal  is  effectively quenched in  marginally stable configuration which we interpret as a state of  'amorphous crystals'.  The next goal is to study  plastic fluctuations  generated by the resulting  system subjected to quasistatic  driving. 
-%
-
-
-%Our analysis will concern   pristine crystals, but only after they have already undergone the  initial elastic instability transforming them into 'amorphous crystals'.  As we have seen,  after such a 'preparation' an initially   stable system is  effectively quenched in  apparently marginally stable  state.  In other words, we focus on what we call the 'second'  plastic yield. 
-
-
-
-%In both of these regimes,  separated by a system size restructuring event, plastic  flow proceeds through local instabilities  that can self organize producing a succession of broadly distributed  stress drops, each  representing an individual avalanche. As we have seen,  these events  represent  sudden, collective movements of a large number of elastically interacting dislocations.  
-
-
-%We recall that in this  setting  one can distinguish between pre-(second)yield   (within  the range of strains $\alpha<\alpha_c$) and post-(second)yield (within  the range of strains $\alpha>\alpha_c$) regimes of plastic deformation. 
-
-
-
-%Despite these differences, 
-
-%Specifically, we found that the probability density of energy drops  in our numerical experiments can be   well approximated by the power-law distribution with an exponential cutoff   
-%\begin{equation}
-%P(x)  \sim  x^{-\epsilon}e^{\lambda x},
-%\end{equation}
-%is exactly the result obtained in the studies of  plasticity in amorphous solids  \cite{Papanikolaou2017-ld,Weiss2021-tt,Sethna2001,Ispanovity2014-ra,Alava2014,Lehtinen2016-qy}.
-
- 
-
-
- 
-%
-%
-% This is, in fact, not surprising  since the stabilization in the 'amorphous crystal' state was achieved exactly at the end of the first system-size avalanche.  Apparently, the associated  fast time dynamics  brought into the system  exactly the   level of self-generated  disorder needed  to transform  a stable (elastic) state into a marginally stable (glassy) state. 
-%   
-%   In the same  spirit, the recovery of  the exponent $\epsilon = 1.0$ in our numerical experiments may be suggesting that
-%   
-%    our 
-%
-%
-%
-% In both cases  'rigidity'  results from  the fact that  dynamics has just subsided which explains why the ensuing stability is only marginal.
-%
-%of the power-law exponent $\epsilon = 1.0$  was obtained in discrete dislocation dynamics (DDD) studies. 
-%
-% In their numerical experiments conducted on 
-%
-%has been encountered in the studies of crystal plasticity even if in somewhat  different contexts. Thus, it was found to be
-%
-%dislocations the authors associated exactly  this value of the power-law exponent with extended  range of steady plastic flow
-%
-
-
-%our  pristine crystal  exactly into marginally stable configuration.  In other words, the crystal self-generated 
-%
-%can be considered  as an indicator of the fact that in the course of self-organization of the system it has posited itself at the threshold of mechanical stability.  Based on this understanding,
-%In fact the  exponent $\epsilon = 1.0$  is consistent with models of jamming transitions in amorphous materials, suggesting that glass formation  shares underlying physics with jamming phenomena. 
-%
-%, through either  quench or jamming, 
-
-%This brings us back to the idea of a similarity between  the plastic response  of our 'primed' pristine crystals and some amorphous solids, in particular,  well-annealed glasses.  It is clear that   the peculiar  macroscopic behavior of plastically deforming solids is a reflection of the complex structure of the energy landscape.  It has been argued that the  necessary level of  complexity can  emerge as a result of hierarchical (ultrametric) organization of energy wells in the phase space (Müller and Wyart, 2015; Berthier et al., 2019). \cite{???}.( \textbf{add references})
-%%Müller, M., Wyart, M., 2015. Marginal stability in structural, spin, and electron glasses. Annu. Rev. Condens. Matter Phys. 6, 177.
-%%Berthier, L., Biroli, G., Charbonneau, P., Corwin, E.I., Franz, S., Zamponi, F., 2019. Gardner physics in amorphous solids and beyond. J. Chem. Phys. 151,
-%%010901.
-%  In this case, the mechanical response under athermal quasistatic loading,  can be expected to  scale-free plastic fluctuations,  which one can link directly to  the   fine structure of the energy landscape.  
-%
-
 Note next that the pre-yielding value of the cutoff parameter $\lambda = 0.0230$ is drastically different from its post-yielding value $\lambda = 0.0076$. The approximately three-fold decrease of the value of $\lambda$ after yielding indicates that large energy drops become substantially more probable in the post-yield regime. The emergent collective behavior in this regime manifests itself in a much broader extent of avalanche activity reaching the size of the system and in this sense the system shows the signs of divergence of the characteristic length $l \sim 1/\lambda.$
 
 This conjecture is supported  by the observation  that  shear bands  in the post-yield regime   traverse the whole computational domain which is in stark  contrast to unequivocally subextensive localized dislocation rearrangements  taking  place in the pre-yield regime.  The physical nature of the implied  criticality  is presently actively  debated \cite{Grinstein1995-lw,Zippelius2023-ak,Charbonneau2023-oo,Oyama2023-oj,Xing2024-tz,Zhang2020-ax}.
@@ -713,300 +427,12 @@ Finally we mention that if intermittent fluctuations in amorphous plasticity are
  In this paper we performed a series of numerical experiments aimed at deeper understanding of the phenomenon of plastic yield in model 2D crystals in the limit of zero strain rate and negligible thermal effects. While it is known that quasi-brittle yielding is a salient feature of well-annealed glassy materials, we showed that generic crystals can exhibit remarkably similar phenomenology after the necessary level of annealed disorder emerges from dislocation self-organization after the breakdown of an affine elastic configuration. One of our main findings is that in the ensuing quasi-amorphous crystals both pre- and post-yield avalanches exhibit power law statistics with matching exponents indicative of hierarchical structure of the underlying energy landscape and marginal stability of the associated mechanical system. \textcolor{blue}{It would  also be  intriguing to explore whether crystals with higher triangular symmetry exhibit similar behavior and to assess whether the specific choice of strain-energy density functional plays a crucial role in these phenomena.} More work is needed to turn our initial insights into an understanding of similar phenomena in realistic 3D crystals with HCP, FCC and BCC symmetry. In particular, only a 3D model will distinguish adequately between edge and screw dislocations, and will be suitable to handle realistic dislocation entanglements. It will then be able to capture such important physical effects as dislocation climb, cross slip and forest hardening.
  
  
-% marginal stability. This supports our idea of an 'amorphous crystal'  which is characterized by the  marginal stability of the associated defect configuration   indicative of a   hierarchical  structure of the underlying energy landscape. 
-%
-% 
-% particular, in full agreement  to what is known about plasticity of glassy systems, here  we also found  that 
-% 
-% 
-%  in both pre- and post-yield regimes, plastic  flow proceeds by local instabilities at the level of single elastic elements which  are organized  in   hierarchical  way due to the presence of long range  elastic interactions. This self-organization is behind   dislocational avalanches  which takes place at   constant applied strain but which result in  stress or energy drops exhibiting power law statistics. Similarly distributed energy and stress drops  have been long known  to be a signature of  amorphous plasticity. The use of the MTM approach allowed us  to  discover that even the exponents, characterizing power law distributed avalanches,  are similar in some model systems representing amorphous and crystalline plasticity. 
-%
-
-%The second-stage-yielding  is preceded by pseudo-elastic deformation of  a quasi-amorphous solid  associated with only minimal dislocational activity.The activity of defects  remains  localized as in the case of 'caged' rearrangements  in  amorphous solids.  This  nominally-elastic stage of plastic deformation  which is sometimes interpreted as 'micro-plasticity', ends abruptly with  a catastrophic  phenomenon closely resembling   quasi-brittle yield in well-annealed glasses.  We therefore interpret this  system spanning event  as a transition to the actual plastic yield in a pseudo-amorphous system.  The subsequent  plastic flow takes the form of intermittent development of  a grain texture  at  almost constant stress. It  involves local and global rearrangements of the dislocational structure which takes the form  of an evolving  system of  shear bands. 
-% 
-
-
-
-%We note that the emergence of such quasi-amorphous state  after a massive dislocation nucleation event is not completely surprising. Thus,  the  mechanical response of conventional poly-crystalline solids is usually qualified as isotropic and  is treated by continuum plasticity theory similar to how it treats  other amorphous solids. What we see  is that  at least some features of amorphous response may be acquired by  pristine crystals even before the polycrystaline texture develops. In other words, the necessaary level of annealed  disorder may  result from  dislocation  self-organization at   an  almost molecular level.  
-
-% To capture the intricate underlying dislocational dynamics  we used a relatively novel theoretical  and computational tool:  a mesoscopic tensorial model  (MTM) of crystal plasticity representing a conceptual trade-off between continuum  and atomic descriptions. 
-%
-%
-%The MTM is built on the fundamental assumption that mesoscale material elements are exposed to an effective globally periodic  energy landscape  accounting for lattice-invariant shears. From the perspective of such Landau-type continuum theory with an infinite number of equivalent energy wells, plastically deformed crystal emerges as a multi-phase mixture of equivalent phases. Plastic yield can then be interpreted as an escape from the reference energy well, and plastic mechanisms can be linked to low-energy valleys in the energy landscape.  Despite its conservative appearance, the MTM approach is fundamentally dissipative with  dry friction  dissipation emerging as an averaged  description of an overdamped athermal dynamics in a rugged energy landscape.  As we explain in the paper, the internal cutoff length scale is brought into the MTM by the assumption that a mesoscopic element (cluster of atoms) deforms homogeneously with inhomogeneity emerging only at supra-mesoscopic scales. 
-%
-%In comparison with other mesoscopic theories, the MTM  approach has the advantage of describing in a self-consistent manner various topological changes in dislocation configurations such including  nucleation, annihilation and  interaction with obstacles, while relying only on the information about  the inter-atomic potential.  In addition to the overall description of plastic yield at the level of stress-strain relations, the MTM approach can  capture more  subtle  effects  which depend crucially on the interplay between short and long range interactions among  dislocations. An important effect of this type, which was for us of particular interest,  is the emergence of  intermittent  dislocational avalanches. 
-
-
-% While it is known that quasi-brittle yielding is  a salient feature  of well-annealed glassy materials,  here we used  the  MTM approach to show that plastic yielding in model pristine crystals leads to a remarkably similar phenomenology. More specifically, our numerical experiments  revealed that plastic yielding in  somewhat  stylized ideal crystals can be represented as a two stage process. 
-% 
-% During the first-stage-yielding massive dislocation nucleation results  in the formation of an effectively  glassy state. More precisely,  a  system size avalanche, representing  nonlinear elastic instability,  a fast time  self-oranization phenomenon  combining nucleation and   the proliferation of defects  which  effectively transform  a pristine crystal into what we call an 'amorphous crystal'.
-% 
-
-  
  
-%  More work would be needed to convert our initial insights, revealing various peculiar aspects of the behavior  of an over simplified prototypical system, into a deep physical  understanding of the phenomenon of plastic yield  in  realistic 3D crystals with, say  HCP, FCC and BCC symmetry.  For instance, while 
-  
- 
-  % The 3D model 
- % addressing crystallographically nontrivial  crystal structures 
-%  will also allow one to study the effects of the orientation of the samples in the loading device which are known to affect strongly the complexity of the emerging dislocation patterns.  
-  
-  % and developing a rigorous conceptual bridge between the notions used to describe atomic and mesoscopic scales. 
- 
- 
- \emph{ Acknowledgments. } The authors thank N. Gorbushin, R. Baggio, G. Tejedor,  A. Ahadi,  E. Lundheim  and S. Patinet for helpful discussions. The work of O.U.S. was supported  by  the grants ANR-18-CE42-0017-03, ANR-19-CE08-0010-01, ANR-20-CE91-0010.   L. T. were supported by the grants ANR-17-CE08-0047-02, ANR–21-CE08-MESOCRYSP and ERC-H2020-MSCA-RISE-2020-101008140.
+ \emph{ Acknowledgments. } The authors thank N. Gorbushin, R. Baggio, G. Tejedor,  A. Ahadi,  E. Lundheim  and S. Patinet for helpful discussions. The work of O.U.S. was supported  by  the grants ANR-18-CE42-0017-03, ANR-19-CE08-0010-01, ANR-20-CE91-0010,  ANR-24-CE91-0002.   L. T. were supported by the grants ANR-17-CE08-0047-02, ANR–21-CE08-MESOCRYSP and ERC-H2020-MSCA-RISE-2020-101008140.
 
 %\bibliography{plasticity.bib}
 \bibliography{./formatted.bib}
 
-%\section*{Supplementary material}
-%
-%\paragraph {Fundamental and elastic domains.}  We shall refer to the restriction of the energy density to the fundamental domain   as $\phi_D(\tilde{\bf C})$ where $\tilde{\bf C}$ is the projection of  a  general ${\bf C}$ into this domain, known as Lagrange reduction. We can write $\tilde{\bf C}={\bf m}^T{\bf C} {\bf m}$  where   ${\bf m}$ is the  corresponding  mapping  of the metric tensor ${\bf C}$ into  the fundamental   domain ensuring that  $ \phi({\bf C})= \phi_D(\tilde{\bf C})$.  
-%
-%In our 2D case, illustrated with better  resolution  in Fig. \ref{fig:atlas1}(a),  the fundamental domain   can be chosen  in the form ~\cite{Parry1998,Conti2004-sv,Engel2012,pitteri2002continuum}
-%\begin{equation}
-%\mathscr{D} = \left\{C \in \det{\bf C}=1, \quad 0<C_{11}\le C_{22},\quad 0\le C_{12}\le \frac{C_{11}}{2}\right\}.
-%\end{equation}
-%Given a generic metric $\bf C$, the task of finding a unimodular matrix ${\bf m} $ ensuring that $\tilde{\bf C}\in D$ (and therefore $ \phi({\bf C})= \phi_D(\tilde{\bf C})$) can be formulated in the form of a recursive algorithm known as Lagrange reduction~\cite{Conti2004-sv,Engel2012}. Specifically, if we define the matrices : 
-%\begin{equation}
-%{\bf m}_1=\begin{pmatrix}
-%1 & 0 \\
-%0 & -1 
-%\end{pmatrix},
-%\end{equation}
-%\begin{equation}
-%{\bf m}_2=\begin{pmatrix}
-%0 & 1 \\
-%1 & 0 
-%\end{pmatrix},
-%\end{equation}
-%and  \begin{equation}
-%{\bf m}_3=\begin{pmatrix}
-%1 & -1 \\
-%0 & 1 
-%\end{pmatrix}.
-%\end{equation} 
-%we can formulate the reduction process in a form of an explicit algorithm. Thus, if we start with an assumption that    ${\bf m} = \mathbb{I}$, we can  proceeds through the following steps: 
-%(i ) if $C_{12}<0$, change sign to $C_{12}$, ${\bf m}\rightarrow ${\bf m}${\bf m}_1$; 
-%(ii) if $C_{22}<C_{11}$, swap these two components, ${\bf m}\rightarrow ${\bf m}${\bf m}_2$;
-%(iii) if $2C_{12}>C_{11}$, set $C_{12}=C_{12}-C_{11}$, ${\bf m}\rightarrow ${\bf m}${\bf m}_3$. 
-%As a commentary, we note that the action of the matrix ${\bf m}_1$ is a reflection which returns an acute angle between two lattice vectors $\mathbf{e}_i$. The action of the matrix ${\bf m}_2$ is also a reflection as it swaps two lattice vectors $\mathbf{e}_i$. Both of these operations  belong to the point group and propagate the metric only inside the corresponding 'elastic  domain'  (Pitteri neighborhood)  composed of the four copies of the minimal  domain $D$ ~\cite{pitteri2002continuum}. Instead, the mapping defined by matrix ${\bf m}_3$ brings the metric outside the 'elastic domain'  and therefore represents a quantized analog of the macroscopic plastic strain ~\cite{perchikov2024}.
-%
-%%\subsection{General comments}
-%%\label{sec:length_scale}
-%
-%%In what follows  we present the results of a direct comparisons between the outcomes of some benchmark numerical experiments conducted in MTM and in MS frameworks.  As a  basis of such comparison we point to the fact that both types of models are based on the same microscopic model  relying on   pair interactions between atoms and  operating with  exactly the same interatomic potential.
-%
-%\paragraph{Internal length scale.} 
-%In fact,  the lack of convexity of the potential is a property that the MTM   shares with other similar Landau type continuum theories. The usual way of regularization in this case  is  the introduction of  higher gradients (of the deformation, in our case) into the energy density and using the corresponding internal length scale as a cutoff parameter\cite{Hohenberg2015-jz}. This would be an approach of a corresponding tensorial phase field theory which often leads to over-regularization and the loss of sufficiently fine aspects of the microstructure which is acceptable near critical points but may compromise the inherent nonlocality by  treating it only in the long wave limit. Inside such a framework it is also a nontrivial task to represent  adequately the global lattice symmetry. In view of these limitations, in the MTM  approach we take a different path and bring  an internal  scale  into the model through  an explicit spatial discretization. 
-%
-%Before we turn to the results of our numerical experiments, some general comments about the MTM approach may be suitable as the physical implications of these experiements depend on the chosen modeling framework.  
-%
-% Recall first that in molecular dynamics approach (or rather molecular statics  (MS) in our quasi-static loading case)  there is also a characteristic internal scale: the  interatomic distance $a$ which is a microscale parameter.  In the mesoscopic approach of the MTM  the   coarse-graining scale  $h$, defining the  cutoff beyond which the deformation is considered homogeneous (affine), is necessaril larger than $a$ since  the goal is to   accelerate the computations. Their relative  magnitudes  should be, of course, discussed in terms of dimensionless quantities.  Thus, if the size of the macroscopic domain is  $L$, its  division  into finite elements introduces a dimensionless internal scale   $ h = L/N $ where we recall that $N^2$ is the number  of the nodes in the mesoscopic finite-element grid. The analogous microscale parameter is $\epsilon=a/L$ and  while we are ultimately implying the limit $\epsilon \to 0$, $\delta \to 0$, we must assume that $\delta\gg\epsilon$.  To locate in this perspective  the  classical continuum approach, we recall that  $h$ can be interpreted as an effective  size of a 'continuum particle'.  The, to obtain the continuum limit we first implicitly perform the limit $\epsilon \to 0$ and recover in this way local constitutive response  by using, for instance, the  Cauchy-Born rule. Then, to obtain a scale free theory we  perform the second limit $\delta \to 0$. Essentially we consider  a double   asymptotics 
-%$
-%   \epsilon \to 0,  \delta \to 0 ,
-%$
-%with $\delta\gg\epsilon$ which implies that $a<<h<<L$ and the only remaining length scale is $L$, see Fig. \ref{01}. Instead, in the MTM approach we effectively consider only a single limit $ \epsilon \to 0$ which  allows us still to use the Cauchy-Born rule. We then avoid the second limit and maintain a  small but finite value of the parameter $\delta$ which then necessarily satisfies  the  constraint $\delta\gg\epsilon$. In this situation we have  $a<<h \sim L$ and both $h$ and $L$ survive in the  limit $a/L \to 0$, see  Fig. \ref{01}. In this sense the MTM is essentially a continuum theory with an internal length scale, like, say, phase field model and other similar 'quasi-continuum' approaches.  
-% \begin{figure}[h!]
-%\centering
-%\includegraphics[width=0.25\columnwidth]{figures_ordering/figure_05.pdf}\caption{Schematic representation of the asymptotic ($\epsilon \to 0$, $\delta \to 0$) inter-relations between the molecular statics (MS), the continuum mechanics (CM) and the   mesoscopic tensorial model (MTM). As the (normalized) atomic scale $\epsilon$ tends to zero, the elasticity can be approximated by the energy density obtained through the application of the  Cauchy-Born rule (CB). If the mesoscopic scale  $\delta$ is eliminated, we obtain CM and if it is kept finite and  larger than the atomic scale, we obtain MTM.}
-%\label{01}
-%\end{figure}
-%
-%As on all such theories,  making the dimensional parameter $h$ smaller is equivalent to making another dimensional parameter $L$ larger. In this sense the assumption  that $\delta$ is finite is equivalent to incorporating  finite size effects.  Thus,  even though changes in   $\delta $  will scale  the size of the core regions  of   dislocations, they  will  preserve the nature of  their long range  interactions, at least far away from the boundaries.  
-% The use of Cauchy-Born coarse grained  description, will also  lead  to some  loss of   microscopic details in the description of dislocation cores,  however, the ensuing 'blurred' dislocations   will still   nucleate and self-lock adequately  even if  perhaps at different values of controlling parameters than in the corresponding MS simulations. Note also that at least some of the  characteristic   parameters including the core energy, the Peierls stress, the elasticity of a dislocation line, etc.,  may  be  matched by using $\delta$ dependent interatomic potential  which will then affect  the barrier structure in the corresponding  Cauchy-Born energy density.   The  situation here is the same as in the case of phase field description of phase boundaries where the need to reproduce  the realistic  value of the surface energy requires  the microscopic potential  to be appropriately re-scaled. 
-%
-% 
-%
-%
-% 
-%  
-%  
-%Given the nature of the approximation provided by  the  MTM approach,  it can be compared  to other physical models with partial spatial resolution.  An important example is  the   model of turbulence known as  large eddy simulation (LES), e.g.   \cite{Sagaut2006,Davidson2009}. This  computational approach   deals with a similar problem  of choosing an ultraviolet cutoff  while  describing the processes at the smaller scales by  effective closure schemes.  The principal idea behind LES is the same as in the MTM approach: to reduce the computational cost by ignoring the smallest length scales which turn out to be the most computationally expensive to resolve. In both LES and MTM, the omitted small scale details   are  mostly sacrificed in the interests of addressing  the   scale invariant   aspects  of the phenomena. As in the MTM, the   sub-grid scales in the LES  are not  irrelevant, and their effect  is  modeled  by  sub-grid scale  models which  are not rigorously derived from the micro-scale but, instead, combine empirical information with some fundamental physical constraints. The choice of the grid size  in  LES  is rooted in  the idea   that LES accurately captures the energy-containing large eddies while modeling the smaller ones only effectively to maintain  a  balance between accuracy and computational feasibility. Similarly,  the choice of the cutoff  scale $h$ in the  MTM, where the sub-grid description reduces to Cauchy-Born type representation of the energy density,  is guided by the necessity to capture within  available  computational resources  the  collective effects involving a large number of dislocations leading to intermittent avalanche behavior  and  attendant spatial complexity. In this perspective,   the actual value of the parameter $h$ in the MTM approach is irrelevant as long as the \emph{quantitative} comparison with MS is not an issue and the computational domain is large enough so that the finite size effects due to interaction of   enlarged dislocation cores with   external boundary can be still neglected. In such settings, by changing $h$ we end up capturing  the same physical interactions even if they are viewed with different degree of resolution. 
-%
-% 
-%
-%
-%
-%Therefore, we adopt  a pragmatic  approach to the choice of the mesoscopic length scale $h$ and  make it problem-specific.  The idea is to  ensure  that  the  Cauchy-Born   energy density,  computed for a  \emph{finite} lattice fragment with  scale $h$,    can be considered as approximately periodic within  the interesting range of strains. In other words, we would like to  capture correctly  the  targeted  energy wells  while probably sacrificing the $GL(2,\mathbb Z)$ periodicity beyond the actually reachable range. Since the exact global  periodicity is recovered fully in the Cauchy-Born approach only in the limit of infinite sample size, our  strategy suggests that  the   cutoff scale $h$  should be increased  when  the goal is to capture the phenomenon of progressively larger slips along the same slip system. (\textbf{which value of $h$ are we actually choosing?} \textcolor{blue}{we take ${h=1}$})
-%
-%
-%
-%
-%%\section*{Supplementary material}
-%\paragraph{Elastic energy. } The single-period Landau potential $\phi_D(\tilde{\bf C})$ can be now constructed using the classical Cauchy-Born approach. Suppose   that material points in a representative volume $\Omega $ undergo an affine deformation  such that \begin{equation}
-%{\bf y}({\bf x}) = {\bf x} + {\bf u}({\bf x}),
-%\end{equation}
-%and the displacement vector  ${\bf u}({\bf x})$ is an affine function of $\bf x$, see Fig. \ref{fig:09}. Specifically, if we  define the vectors ${\bf R} = {\bf x} - {\bf x}' $ and ${\bf r} = {\bf y} - {\bf y}'$, connecting two atoms   in the reference  and in the deformed configurations, respectively,  we can write ${\bf r} = {\bf F} {\bf R}$ where we introduced the homogeneous  deformation gradient  $ F_{ia} = \partial y_i/\partial x_a = \delta_{ia} + \partial u_i/\partial x_a$. 
-%
-%
-%To compute the energy density $\phi(\bf C)$, we need to account for the elongation or shortening of   every  atomic bond and then average over the domain $\Omega $. Then, if the interatomic potential is $V(|{\bf r}|)$ which is defined within a given  cutoff,  
-%% = \sqrt{ R_1^2 C_{11} + 2 R_1 R_2 C_{12} + R_2^2 C_{22} })$, 
-% we can write
-%\begin{equation}
-%\label{eqn:cg_sum}
-%\phi( {\bf C}) = \frac{1}{2\Omega }\sum_{{\bf x}} \sum_{{\bf x}'\in\mathcal{N}({\bf x})} V \Bigl( \sqrt{R_a C_{ab} R_b} \Bigr),
-%\end{equation}
-%where $C_{ab}=F_{ia}F_{ib}$ and the internal summations involves all points ${\bf x}'$ belonging to the cutoff neighborhood $\mathcal{N}({\bf x})$. After we compute the energy in this way inside the fundamental domain   $D$, we can extend it to the whole configurational space by $GL(2, \mathbb{Z})$ periodicity. The ensuing Landau potential can be expected to become smooth only in the limit when the size of the domain $\Omega $ tends to infinity.
-%
-%
-%\begin{figure}[h!]
-%\includegraphics[scale=0.05]{figures_ordering/cauchy.png}
-%\caption{ Schematic representation of the finite element containing a number of atomic units which are assumed to deform homogeneously.  } 
-%\label{fig:09}
-%\end{figure}
-%
-%One can also achieve a desired level of smoothness phenomenologically, by representing  the energy density inside the domain  $D$ using  polynomial functions of different degrees.  In this work  we adopt , for simplicity, such an approach  and without relying  on any   particular interatomic potential,  use a prototypical   sixth order polynomial energy density developed in \cite{Parry1998,Conti2004-sv} which ensures stress continuity over the whole configurational space. 
-%Specifically, we assume that 
-% \begin{equation}\label{enerC}
-% \phi_0 \left( \frac{\tilde{\bf C}}{(\det {\tilde{\bf C}})^{1/2}} \right) = \beta\psi_1\left( \frac{\tilde{\bf C}}{(\det {\tilde{\bf C}})^{1/2}} \right) + \psi_2\left( \frac{\tilde{\bf C}}{(\det {\tilde{\bf C}})^{1/2}} \right), 
-% \end{equation}
-%where 
-%\begin{align}
-%\psi_1 &= I_1^4 I_2 - \frac{41}{99} I_2^3 + \frac{7}{66} I_1 I_2 I_3 + \frac{1}{1056}I_3^2, \\
-%\psi_2 &= \frac{4}{11} I_2^3 + I_1^3 I_3 - \frac{8}{11} I_1 I_2 I_3 + \frac{17}{528} I_3^2.
-%\end{align}
-%and we introduced  the following hexagonal invariants of the metric tensor:
-%\begin{align}
-%I_1 &= \frac{1}{3}(\tilde{C}_{11} + \tilde{C}_{22} - \tilde{C}_{12}), \\
-%I_2 &= \frac{1}{4}(\tilde{C}_{11} - \tilde{C}_{22})^2 + \frac{1}{12}(\tilde{C}_{11} + \tilde{C}_{22} - 4\tilde{C}_{12})^2, \\
-%I_3 &= (\tilde{C}_{11} - \tilde{C}_{22})^2(\tilde{C}_{11} + \tilde{C}_{22} - 4\tilde{C}_{12}) - \frac{1}{9}(\tilde{C}_{11} + \tilde{C}_{22} - 4\tilde{C}_{12})^3.
-%\end{align}
-%The potential  \eqref{enerC} contains a single parameter $\beta$ that enables the enforcement of specific symmetries on the reference state. We select here  $\beta = -1/4$ which  ensures that global energy minimizers correspond to square lattices. The total elastic energy, allowing one to deal with both shear  and volumetric deformations, is taken in the form
-% \begin{equation}
-%\phi(\tilde{\bf C}) = \phi_0 \left(\frac{\tilde{\bf C}}{(\det {\tilde{\bf C}})^{1/2}} \right) + \phi_v(\det \tilde{\bf C}). 
-%\end{equation}
-% The volumetric part, which primarily influences dislocation core structures and controls the formation of voids, is assumed to be of a generic form
-%  \begin{equation}
-% \phi_v(s) = \mu(s - \log(s)) 
-% \end{equation}
-% which prevents infinite compression. To maintain in our numerical experiments the strain field near the surface $\det C = 1$, we adopted   a sufficiently high value of the bulk modulus,  $\mu = 5$. 
-% 
-% \paragraph{Numerical method}
-% 
-%  The numerical implementation of MTM is then based on solving an elastic finite element problem, with elements imitating mesoscopic aggregates  of atomic cells.  To trace the mechanical response of the crystal we follow the displacements of the   network of discrete nodes  labeled by integer valued coordinates $I =1,..., N^2$.
-%
-%We assume further that each  of the  elements  is a deformable triangle and  employ standard finite element discretization with linear triangular 3-node elements  \cite{Irons1966} . We begin by  writing  the displacement field  inside each of these triangles  in the form 
-%\begin{equation}
-% {\bf u} ({\bf z}) = \sum_{a } \mathcal{N} ^a({\bf z};h) {\bf u}^a,
-% \end{equation}
-% where ${\mathcal N}^a(\bf z;h)$ are   compactly supported  linear shape functions,  ${\bf u}^a$ are the amplitudes of the displacements of the nodes and summation is assumed over repeated indexes; the interpolation functions for each element are defined in terms of   local  dimensionless coordinate system. The mesoscopic deformation gradient is then 
-% \begin{equation}
-% {\bf F}({\bf z}; h) =\mathbb{I}+ {\bf u} ^a\otimes\nabla\mathcal{N} ^a({\bf z};h). 
-% \end{equation}
-% In terms of macroscopic reference coordinates,  the elastic energy inside each element can be  computed using the simplest   quadrature scheme 
-%\begin{equation}
-%w ({\bf x}; h)=\frac{1}{2}  \phi({\bf F} ({\bf x}; h)) J({\bf x},h),
-%\end{equation}
-%where $J$ is the determinant connecting local ($\bf z$)   and global ($\bf x$) coordinate systems (\textbf{ correct? CORRECT}). 
-% 
-%We illustrate in Fig \ref{fig_08} our computational mesh which  is  a 2D   lattice representing a scaled version of the  original atomic lattice; a representative  triangular  finite element is, for instance,   the element BAC adjacent to the node A.  This element connects  three nodes and therefore the index $a$  associated with this element takes three values  $a=1,2,3$. We effectively assume in the MTM that the energy associated with  the deformed element BAC depends on the three parameters:  the deformed lengths  of the bonds AB and AC and   the deformed value of the angle BAC. To obtain these dependencies we use the Cauchy Born rule. Behind it is the assumption  that the element deforms as if it was embedded into   an infinite lattice undergoing a global affine (homogeneous) deformation. The latter is   fully characterized by the same three parameters which we interpret as the components of the corresponding metric tensor $C_{11}$, $C_{22}$ and  $C_{12}$.
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=0.2\columnwidth]{figures_ordering/figure_06.pdf}
-%\caption{Six triangular finite elements which are immediately adjacent to a generic   node $A$. }
-%\label{fig_08}
-%\end{figure}
-%Finding  solution of an elastic problem implies  local minimization of the energy 
-%\begin{equation}
-%W=\int_{\Omega}w({\bf x}; h)  d\mathbf{x}, 
-%\end{equation}
-%which is prescribed on a triangulated  domain \(\Omega\).   The conditions of mechanical equilibrium, formulated   in terms  of the first Piola-Kirchhoff stress tensor 
-%\begin{equation}
-%\mathbf{P}= 2\mathbf{F} \mathbf{m} \frac{\partial w }{\partial \tilde{\bf C}}\mathbf{m}^T,
-%\end{equation} 
-%take the form 
-%$$\nabla\cdot\mathbf{P}=0.$$
-%In the finite elelment representation these  equations can be rewritten in the form
-%\begin{equation}
-%\frac{\partial W}{\partial \mathbf{u}^{a}}=\int_{\Omega} \mathbf{P}(\mathbf{x};h) \nabla \mathcal{N}^{a} (\mathbf{x};h) d\mathbf{x} = 0.
-%\end{equation} 
-%
-%Referring again to our Fig \ref{fig_08}, we observe that the elastic  energy $w$ dependence on the displacement of the node A has six contributions from the six adjacent triangular elements BAC, CAD, DAE, EAF, FAG and GAB. Therefore, in this setting,  the node A interacts  not only  with all the  nearest   nodes B,C,E,F but also with some next to nearest neighbor nodes D and G.   This interaction can be still interpreted as 'local', for instance, as it   shown in Fig \ref{fig_08},  the node A does not interact with  mode distant nodes H and I. 
-% The implied  'multibody' interaction suggests  that the energy of the node A depends not only on the distances to the corresponding  nodes  B,C,D, E, F, G  but also on the three-point configurations represented by the angles BAC, CAD, AED, EAF and AFG. In other words, the   force balance  for the node A includes  not only responses to the  elongation of the bonds but also the associated  three-body contributions. 
-%
-%We emphasize  that such non-pairwise  interaction is a result of coarse graining. In this sense the MTM  approach is not  in any  contradiction with the fact that in the corresponding atomic model  the interaction between the actual atoms is pairwise while maybe extending far beyond nearest neighbors. Essentially, in  the  MTM approach  the energy of a single  elastic element (triangle in our case)  is  computed as if the surrounding deformation field was affine which means that the local  inhomogeneity of the deformation is underplayed.   
-%
-%Note also that the MTM, with parameter $h$   equal to atomic scale and with nodes identified with actual atoms,   can be seen as an atomistic scale model in which the actual inhomogeneity of local environment of a given atom  is neglected even if the deformation of the element itself is properly accounted for. Such effective coarse graining allows can be used as a way  to save computational time but at the expense of misrepresenting some microscopic aspects of the problem. Still, despite the inevitable shortcomings accompanying  this type of approximations, the  MTM approach remains advantageous as an accelerated computational scheme allowing one to bridge the gap between continuum and atomistic descriptions.  The implied  acceleration is due to the fact that   one does not need to keep track of  all neighboring atoms of a given element as the   energy of the element can be computed  in a straightforward  manner  based only on the information about  the local value of the deformation gradient.   The acceleration comes, of course, at a price: in the presence of an internal cutoff 
-%length scale some aspects of a genuinely atomistic description are necessarily lost. 
-%
-%
-%
-%The ensuing mathematical  problem can be solved numerically using  a quasi-Newton method accompanied by the Newton–Raphson (NR) "refinement" when the initial guess is too far from the solution for Newton–Raphson method to converge  ~\cite{Tadmor1996-qi}. It has the advantage of being computationally efficient as well as being able to handle nonconvexity of the problem by only dealing with positive-definite Hessian matrices. The numerical method performs the minimization of the energy functional  iteratively. In very general terms, it begins with an initial guess of $\boldsymbol{u}(\boldsymbol{x})$ and a given approximation of the \textit{inverse} Hessian matrix $H_0$ as well as known optimal  number $m$ of BFGS corrections to be stored. An iteration first finds a minimization direction by performing a (one-dimensional) line search and finding the optimal step-size. Next, the solution is updated along with other quantities necessary to compute the inverse Hessian matrix of the next step.  The algorithm differs from BFGS in the way it handles the inverse Hessian matrix, which is approximated/updated by $m$ corrections at each iteration.
-%
-% More specifically, in our numerical experiments to find ${\bf u}^a$, we first use the L-BFGS algorithm~\cite{Bochkanov2013-lk} which builds a positive definite linear approximation allowing one to make a quasi-Newton step lowering the total energy.   The   iterations continue till  the increment  in the advance of the total energy   becomes sufficiently small. The obtained approximate solution is then   used as an initial guess  ${\bf w}^a$ to solve, using LU factorization~\cite{Sanderson2016-ht,itensor},  the  equations for the correction  $\text{d}{\bf w}^a$
-% around   an initial guess for the displacement field $${\bf u}^a={\bf w}^a +  \text{d}{\bf w}^a.$$  The corresponding  system of linear equations can be written in the form
-%   \begin{equation}
-% K^{ab}_{ij}dw_j^b+R_i^a =0,
-% \end{equation}
-%  where 
-%\begin{equation}
-%K^{ab}_{ij}= A_{ipjq}({\bf F}) \frac{\partial {\mathcal N}^a}{\partial x_p}\frac{\partial {\mathcal N}^b}{\partial x_q},\,\,\, R^a_i= P_{ip}( {\bf F}) \frac{\partial {\mathcal N}^a}{\partial x_p}.
-%\end{equation}
-%Note that here  we used the Eulerian $i,j=1,2$ and the Lagrangian $K,L =1,2$ indexes and assumed summation on repeated indexes.  
-%We also defined  
-% \begin{equation}
-% A_{iajb}= \frac{\partial^2\phi_D{({\bf \tilde C} )}}{\partial F_{ia}\partial F_{jb}}.
-%\end{equation}
-% the tensor of tangential elastic moduli. We note that  the knowledge of the Eulerian acoustic tensor  
-% \begin{equation}\label{Q}
-% {Q}_{ij}=F_{la} F_{mb} A_{iajb} n_l n_m,
-% \end{equation}
-%  where $n$ are vectors of the unit circle allows one to  formulate the criterion of an elastic instability of the corresponding continuum body  in the form \cite{Ogden1997-rf,Grabovsky2014-fb}
-%  \begin{equation} \label{detQ}
-%  \det (\boldsymbol{{Q}})=0.
-%  \end{equation}  
-%  
-%  \begin{figure}[h!]
-%\centering
-%\includegraphics[scale=0.2]{figures_ordering/poincare_newdisk_analysis_1.pdf}\caption{The stability envelopes superimposed on the strain-energy density landscape in  metric space visualized via Poincar\'e (stereographic) projection. The color map represents the strain-energy density field. The stability boundaries, derived from acoustic tensor analysis where $\det(\boldsymbol{Q})=0$, enclose the region where homogeneous solutions are mechanically stable. Five boundaries are shown: the original stability envelope and four copies generated by applying the coordinate transformations $\mathbf{m}^T \cdot \mathbf{C} \cdot \mathbf{m}$ with $\mathbf{m} \in \left\{\begin{bmatrix} 1 & \pm 1 \\ 0 & 1 \end{bmatrix}, \begin{bmatrix} 1 & 0 \\ \pm 1 & 1 \end{bmatrix}\right\}$, representing equivalent energy wells in the metric space.}
-%\label{01}
-%\end{figure}
-%
-%
-%
-%
-%\subsection{Periodic Boundary Conditions with Macroscopic Deformation}
-%
-%\textcolor{blue}{To simulate an effectively infinite crystal under macroscopic deformation while maintaining computational tractability, we implement periodic boundary conditions (PBCs) through domain replication. The computational domain $\Omega_0$ with dimensions $L_x \times L_y$ is replicated in all spatial directions to create a periodic array of domains.}
-%
-%\subsubsection{Translation Vectors and Domain Geometry}
-%
-%\textcolor{blue}{We define a set of translation vectors $\mathbf{t}_n$ that generate the periodic lattice of domains:
-%$$\mathbf{t}_n = \begin{pmatrix} n_x L_x \\ n_y L_y \end{pmatrix}, \quad \mathbf{n} = (n_x, n_y) \in \{-1, 0, 1\}^2,$$
-%where $\mathbf{n}$ represents the integer lattice coordinates. For the 9-domain implementation, we consider all translation vectors within the immediate neighborhood of the central domain.}
-%
-%\textcolor{blue}{Let $\mathbf{F}(t)$ denote the macroscopic deformation gradient tensor at time $t$. The position of any replicated domain relative to the central domain $\Omega_0$ is given by:
-%$$\mathbf{R}_n = \mathbf{F} \cdot \mathbf{t}_n,$$
-%where $\mathbf{R}_n$ represents the displacement vector of the origin of the domain corresponding to translation $\mathbf{t}_n$.}
-%
-%\subsubsection{Particle Position Mapping}
-%
-%\textcolor{blue}{For a particle located at position $\mathbf{x}_i$ in the central domain $\Omega_0$, its periodic image corresponding to translation vector $\mathbf{t}_n$ is positioned at:
-%$$\mathbf{x}_i^{(n)} = \mathbf{x}_i + \mathbf{R}_n = \mathbf{x}_i + \mathbf{F} \cdot \mathbf{t}_n.$$
-%This ensures that the macroscopic deformation gradient is consistently applied across all periodic images, maintaining the correct strain field representation.}
-%
-%\subsubsection{Delaunay Triangulation and Triangle Selection}
-%
-%\textcolor{blue}{After establishing the positions of all particles across the nine domains (original domain $\Omega_0$ and its eight periodic images), we perform a Delaunay triangulation on the complete set of particles:
-%$$\mathcal{P} = \{\mathbf{x}_i : i \in \mathcal{I}_0\} \cup \{\mathbf{x}_i^{(n)} : i \in \mathcal{I}_0, n \neq \mathbf{0}\},$$
-%where $\mathcal{I}_0$ denotes the set of particle indices in the original domain and $\mathbf{0} = (0,0)$ corresponds to the null translation vector. This means we deal with the all particles in the original central domain
-%and all periodic images of those particles in the 8 surrounding domains.}
-%
-%\textcolor{blue}{From the resulting triangulation $\mathcal{T}$, we select only the unique triangles that have at least one vertex belonging to the original domain $\Omega_0$. The initial selection of all triangles with at least one node connected to the original domain may introduce duplicated triangles due to the periodic replication. Therefore, we apply an additional filtering step to remove these duplicates and retain only unique triangles.
-%This selection and filtering procedure ensures that:
-%\begin{enumerate}
-%\item Each triangle in the computational mesh is counted exactly once, eliminating redundancy from the periodic duplication
-%\item All triangles connected to the original domain are included, maintaining proper connectivity across periodic boundaries
-%\item The triangulation naturally incorporates the macroscopic deformation through the deformed positions of the periodic images
-%\end{enumerate}
-%}
-%
-%\textcolor{blue}{The selected set of triangles $\mathcal{T}_{\text{unique}}$ forms the computational mesh for the mesoscopic tensorial model calculations, preserving both the periodic boundary conditions and the consistency with the applied macroscopic deformation gradient $\mathbf{F}$.}
-%
-% 
-% 
-% 
 
 
 
