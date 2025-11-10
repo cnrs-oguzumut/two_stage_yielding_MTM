@@ -17,7 +17,6 @@ superscriptaddress,notitlepage]{revtex4-1}
 \usepackage{wasysym} % for hexagon and star of david in equation
 \usepackage{siunitx}
 \usepackage{enumitem}
-
 \usepackage{lipsum}
 \usepackage{amsmath,amsthm}
 \usepackage{amsfonts}
@@ -252,8 +251,9 @@ PMMH, CNRS UMR 7636 ESPCI PSL, 10 Rue Vauquelin, 75005, Paris, France}
 \date{\today}
  \maketitle
 
-\paragraph {Fundamental and elastic domains.}  We  refer to the restriction of the energy density to the (minimal periodicity) fundamental domain   as $\phi_\mathscr{D}(\tilde{\bf C})$, where $\tilde{\bf C}={\bf m}^T{\bf C} {\bf m}$  is the projection of  a  general metric tensor ${\bf C}$ into this domain and  \textcolor{blue}{${\bf m}$ is the corresponding unimodular transformation that maps 
-${\bf C}$ into the fundamental domain, ensuring that $ \phi({\bf C})= \phi_\mathscr{D}(\tilde{\bf C})$.}  In our 2D case   the form of the fundamental domain   is known   \cite{Parry1998,Conti2004-sv,Engel2012,pitteri2002continuum}
+\paragraph {Fundamental and elastic domains.}  Consider  the energy density  function $ \phi({\bf C})$   with tensorial symmetry  $ GL(2,\mathbb{Z}) = \left\{{\bf m},\, m_{IJ}\in{\mathbb Z},\, \det({\bf m})=\pm 1 \right\}.$    We  refer to the restriction of such periodic  energy density 
+to the minimal periodicity (fundamental) domain   as $\phi_\mathscr{D}(\tilde{\bf C})$. Here $\tilde{\bf C}={\bf m}^T{\bf C} {\bf m}$  is the projection of  a  general metric tensor ${\bf C}$ into the domain $\mathscr{D}$ and   ${\bf m}$ is the corresponding unimodular integer valued matrix  that performs the projection  
+while  ensuring that $ \phi({\bf C})= \phi_\mathscr{D}(\tilde{\bf C})$.  The  actual  configuration  of the fundamental domain  $\mathscr{D}$ is well known   \cite{Parry1998,Conti2004-sv,Engel2012,pitteri2002continuum}
 \begin{equation}
 \mathscr{D} = \left\{  0<C_{11}\le C_{22},\quad 0\le C_{12}\le \frac{C_{11}}{2}\right\},
 \end{equation}
@@ -281,14 +281,16 @@ where $ \det{\bf C}=1$. Given a generic metric $\bf C$, the task of finding a un
 (i ) if $C_{12}<0$, change sign of $C_{12}$ using the mapping ${\bf m}\rightarrow ${\bf m}${\bf m}_1$; 
 (ii) if $C_{22}<C_{11}$, swap these two components using the mapping ${\bf m}\rightarrow ${\bf m}${\bf m}_2$;
 (iii) if $2C_{12}>C_{11}$, set $C_{12}=C_{12}-C_{11}$ using the mapping  ${\bf m}\rightarrow ${\bf m}${\bf m}_3$. 
-Note  that \textcolor{blue}{the action of the matrix ${\bf m}_1$ is a reflection that ensures an acute angle} between two lattice vectors of the square lattice $\mathbf{e}_i$ where $i=1,2$; the action of the matrix ${\bf m}_2$ is also a reflection as it swaps two lattice vectors $\mathbf{e}_i$. Both of these operations  belong to the point group and propagate the metric only inside the corresponding 'elastic  domain'  (Ericksen-Pitteri neighborhood)  composed of the four copies of the minimal  domain $\mathscr{D}$ ~\cite{pitteri2002continuum,Baggio2023}. Instead, the mapping defined by matrix ${\bf m}_3$ brings the metric outside the 'elastic domain'  and therefore represents a quantized analog of the macroscopic plastic strain.
+Note  that  the action of   ${\bf m}_1$ is a reflection that ensures an acute angle between two lattice vectors of the square lattice $\mathbf{e}_i$ where $i=1,2$; the action of the matrix ${\bf m}_2$ is also a reflection as it swaps two lattice vectors $\mathbf{e}_i$. Both of these operations  belong to the point group and propagate the metric only inside the corresponding 'elastic  domain'  (Ericksen-Pitteri neighborhood)  composed of the four copies of the minimal  domain $\mathscr{D}$ ~\cite{pitteri2002continuum,Baggio2023}. Instead, the mapping defined by matrix ${\bf m}_3$ brings the metric outside the 'elastic domain'  and therefore represents a quantized analog of the macroscopic plastic strain.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.32]{Figures_ordered/fig_1_SM.pdf}
-\caption{\textcolor{blue}{Strain-energy density landscape in the space of shear strains visualized on a Poincar\'e disk. The stereographic projection maps points from the configuration space (constrained by $\det{\bf C}=1$) to the disk via the coordinate transformation 
-$t = 2/(2 + C_{11} + C_{22})$, 
-$p = t(C_{11} - C_{22})/2$, 
-$q = tC_{12}$, ensuring that all physically accessible states map to the interior of the unit disk ($p^2 + q^2 < 1$). Thin white lines show the tessellation into equivalent periodicity domains related by $GL(2,\mathbb{Z})$ transformations. Colors represent energy levels. Stability boundaries from equation~\eqref{detQ} are shown by the thick black line around the reference energy well.}
+\caption{Strain-energy density  in the configurational space $C_{11}, C_{22},C_{12}$ with  $\det{\bf C}=1$  stereographically projected on  the  Poincar\'e disk.
+%  $p^2 + q^2 < 1$ where 
+%$p = t(C_{11} - C_{22})/2$, 
+%$q = tC_{12}$, 
+%and  $t = 2/(2 + C_{11} + C_{22})$.
+ Thin white lines represent  the $GL(2,\mathbb{Z})$ tessellation of the  a Poincar\'e disk  into equivalent periodicity domains. Colors represent energy levels. Elastic stability boundary given by ~\eqref{detQ} is  shown by the thick black contour surrounding  the reference state.  Small black squares and triangles correspond to equivalent square and triangular lattices, respectively.
 }
 \label{01}
 \end{figure}
@@ -329,14 +331,16 @@ The isochoric part of the  energy landscape is illustrated in Fig. 2 of the main
  
 
 \paragraph{Internal length scale.} 
-The lack of convexity of the potential is a property which  the MTM   shares with other similar Landau-type continuum theories. In the MTM  approach the necessary regularization  is  introduced by bringing  into the model   an internal  scale  $h$ through  explicit spatial discretization.    If $L$ is the linear size of the macroscopic domain and $N^2$ is the number  of  nodes in the mesoscopic  grid, then the parameter $h=L/N$  introduces elastic finite  elements imitating mesoscopic aggregates of atomic particles and defines in this way the  cutoff beyond which the deformation is considered homogeneous (affine).  The corresponding small parameter is $\delta=h/L=1/N$. Another small parameter in the problem is  $\epsilon=a/L$ where $a$ is  the   interatomic distance and we  are interested in the  double limit:  $\epsilon \to 0$  and $\delta \to 0$ while  $\delta\gg\epsilon$. In the MTM approach  we first implicitly perform the limit $\epsilon \to 0$ and recover in this way  the  continuum  constitutive response    using  the  Cauchy-Born rule. Then instead of performing the  classical  $\delta \to 0$ and obtaining the conventional scale-free continuum theory,  we preserve in the theory a small but finite value of the parameter $\delta$. In this way we effectively account for finite size effects. In particular, the size of the dislocation cores is overestimated while the number of dislocations is underestimated. However, the resulting approach  preserves the basic nature of  both long-range and short-range interactions of dislocations  at least when they are  away from the boundaries. For instance, the  blown up dislocations   will still  nucleate and self-lock adequately. \textcolor{red}{In our simulations  we adopted  a pragmatic  approach to the choice of the   scale $h$ by requiring  that  the  Cauchy-Born   energy density,  computed for a lattice fragment with  scale $h$,   maintains  periodicity within  the relevant range of strains.}
+The lack of convexity of the potential is a property which  the MTM   shares with other similar Landau-type continuum theories. In the MTM  approach the necessary regularization  is  introduced by bringing  into the model   an internal  scale  $h$ through  explicit spatial discretization.    If $L$ is the linear size of the macroscopic domain and $N^2$ is the number  of  nodes in the mesoscopic  grid, then the parameter $h=L/N$  introduces elastic finite  elements imitating mesoscopic aggregates of atomic particles and defines in this way the  cutoff beyond which the deformation is considered homogeneous (affine).  The corresponding small parameter is $\delta=h/L=1/N$. Another small parameter in the problem is  $\epsilon=a/L$ where $a$ is  the   interatomic distance and we  are interested in the  double limit:  $\epsilon \to 0$  and $\delta \to 0$ while  $\delta\gg\epsilon$. In the MTM approach  we first implicitly perform the limit $\epsilon \to 0$ and recover in this way  the  continuum  constitutive response    using  the  Cauchy-Born rule. Then instead of performing the  classical  $\delta \to 0$ and obtaining the conventional scale-free continuum theory,  we preserve in the theory a small but finite value of the parameter $\delta$. In this way we effectively account for finite size effects. In particular, the size of the dislocation cores is overestimated while the number of dislocations is underestimated. However, the resulting approach  preserves the basic nature of  both long-range and short-range interactions of dislocations  at least when they are  away from the boundaries. For instance, the  blown up dislocations   will still  nucleate and self-lock adequately. 
+
+In our numerical code we used dimensionless parameters $\tilde h=h/b=1$ and $\tilde L=L/b=1/N$, where the $b$ is the size of the mesoscopic particle. For the choice of the   scale $b$ it is natural to require  that  the  Cauchy-Born   energy density   computed for a lattice fragment with  scale $b$   exhibits a high level of  periodicity within  the  range of strains reached in a particular  numerical experiment.  We have checked that in our case the assumption that $b \sim 10 a$ is sufficient. 
 
  
  \paragraph{Numerical method.}
  
   Numerical implementation of the MTM approach reduces to solving an elastic finite element problem.  The goal is to follow the displacements of the   network of discrete nodes  labeled by integer-valued coordinates $I =1,..., N^2$. 
   
-  Specifically, we assume that each  of the  elements  is a deformable triangle and  employ the standard  linear  3-node elements  \cite{Irons1966}. The displacement field  inside each of  the elements  can be written  in the form 
+  Specifically, we assume that each  of the  elements  is a deformable triangle and  employ the standard  linear  3-node elements  \cite{Irons1966,Bramble1970-oq}. The displacement field  inside each of  the elements,  represented  in   dimensionless form,  can be written in the form
 %\begin{equation}
  ${\bf u} ({\bf z}) = \sum_{a } \mathcal{N} ^a({\bf z};h) {\bf u}^a,$
  %\end{equation}
@@ -358,34 +362,34 @@ Finding  a solution of an elastic problem implies  local minimization of the ene
 %\begin{equation}
 $W=\int_{\Omega}w({\bf x}; h)  d\mathbf{x}, $
 %\end{equation}
-which is prescribed on a triangulated  domain \(\Omega\).   The conditions of mechanical equilibrium, formulated   in terms  of the first Piola-Kirchhoff stress tensor 
+which is prescribed on a triangulated  domain \(\Omega\).   The conditions of mechanical equilibrium take the form 
+ $\nabla\cdot\mathbf{P}=0$ where we introduced  the first Piola-Kirchhoff stress tensor 
 %\begin{equation}
 %$\mathbf{P}= 2\mathbf{F} \mathbf{m} \frac{\partial w }{\partial \tilde{\bf C}}\mathbf{m}^T,$
-%\end{equation} 
-\textcolor{blue}{$\mathbf{P}= 2\mathbf{F} \mathbf{m} \,\text{sym}\left(\frac{\partial w }{\partial \tilde{\bf C}}\right)\mathbf{m}^T,$ with  $\text{sym}(\mathbf{A})=\frac{1}{2}(\mathbf{A} + \mathbf{A}^T),$
-take the form 
- $\nabla\cdot\mathbf{P}=0.$}
-In the finite element representation these  equations reduce to 
+%\end{equation}
+\textcolor{blue}{
+ $\mathbf{P}= 2\mathbf{F} \mathbf{m}{\bf \Sigma}\mathbf{m}^T,$ with  ${\bf \Sigma} = \begin{bmatrix}
+\frac{\partial w}{\partial \tilde{C}{11}} & \frac{1}{2}\frac{\partial w}{\partial \tilde{C}{12}} \\
+\frac{1}{2}\frac{\partial w}{\partial \tilde{C}{12}} & \frac{\partial w}{\partial \tilde{C}{22}}
+\end{bmatrix}.$ In the finite element representation these  equations reduce to 
 %\begin{equation}
-$\frac{\partial W}{\partial \mathbf{u}^{a}}=\int_{\Omega} \mathbf{P}(\mathbf{x};h) \nabla \mathcal{N}^{a} (\mathbf{x};h) d\mathbf{x} = 0.$
+$$\frac{\partial W}{\partial \mathbf{u}^{a}}=\int_{\Omega} \mathbf{P}(\mathbf{x};h) \nabla \mathcal{N}^{a} (\mathbf{x};h) d\mathbf{x} = 0.$$}
 %\end{equation} 
 
 
 
 
- 
- \textcolor{blue}{The ensuing nonlinear equilibrium problem is solved numerically using the L-BFGS algorithm~\cite{Bochkanov2013-lk}, which constructs a positive definite approximation to the Hessian, enabling quasi-Newton steps that progressively reduce the total energy. Iterations continue until the energy change per iteration falls below a prescribed tolerance. At each iteration, starting from an approximate solution ${\bf w}^a$, we compute a displacement correction $\text{d}{\bf w}^a={\bf u}^a-{\bf w}^a$ by solving the linearized equilibrium equations via LU factorization~\cite{Sanderson2016-ht,Fishman2022-nj}:
+The ensuing nonlinear equilibrium problem is solved numerically using the L-BFGS algorithm~\cite{Bochkanov2013-lk}, which constructs a positive definite approximation to the Hessian, enabling quasi-Newton steps that progressively reduce the total energy. Iterations continue until the energy change per iteration falls below a prescribed tolerance. At each iteration, starting from an approximate solution ${\bf w}^a$, we compute a displacement correction $\text{d}{\bf w}^a={\bf u}^a-{\bf w}^a$ by solving the linearized equilibrium equations via LU factorization~\cite{Sanderson2016-ht,Fishman2022-nj}:
 $$K^{ab}_{ij}dw_j^b+R_i^a =0,$$
-where $K^{ab}_{ij}$ is the global stiffness matrix and $R^a_i$ is the residual force vector. These are assembled from element contributions as
-$$K^{ab}_{ij}= A_{ipjq}({\bf F}) \frac{\partial {\mathcal N}^a}{\partial x_p}\frac{\partial {\mathcal N}^b}{\partial x_q}, \quad R^a_i= P_{ip}( {\bf F}) \frac{\partial {\mathcal N}^a}{\partial x_p},$$
-with summation implied over repeated indices. Here $A_{iajb}$ denotes the tensor of tangential elastic moduli:
-$$A_{iajb}= \frac{\partial^2\phi_\mathscr{D}{({\bf \tilde C} )}}{\partial F_{ia}\partial F_{jb}}.$$ From this modulus tensor, we can construct the Eulerian acoustic tensor
+where$$K^{ab}_{ij}= A_{ipjq}({\bf F}) \frac{\partial {\mathcal N}^a}{\partial x_p}\frac{\partial {\mathcal N}^b}{\partial x_q} $$ is the global stiffness matrix and $$R^a_i= P_{ip}( {\bf F}) \frac{\partial {\mathcal N}^a}{\partial x_p},$$is the residual force vector 
+with summation implied over repeated indices. Note that  we introduced  the tensor of tangential elastic moduli
+$$A_{iajb}= \frac{\partial^2\phi_\mathscr{D}{({\bf \tilde C} )}}{\partial F_{ia}\partial F_{jb}}.$$ which  can be used construct the Eulerian acoustic tensor
 $${Q}_{ij}=F_{la} F_{mb} A_{iajb} n_l n_m,$$
-where $\bf n$ is an arbitrary unit vector. The Legendre-Hadamard condition for loss of strong ellipticity, which marks the threshold of elastic instability, is then given by
+where $\bf n$ is an arbitrary unit vector. The Legendre-Hadamard  condition  which marks the threshold of elastic instability in continuum theory can be  then written in the form
 \begin{equation} \label{detQ}
 \det (\boldsymbol{{Q}})=0.
 \end{equation}
-This stability boundary is used in the main paper and is illustrated for our chosen elastic energy density in Fig.~\ref{01}.}
+The corresponding  stability boundary is referred to in the main paper and it is illustrated for the  chosen elastic energy landscape  in Fig.~\ref{01}.
 
 
 % The ensuing mathematical  problem is solved numerically using the L-BFGS algorithm~\cite{Bochkanov2013-lk} which builds a positive definite linear approximation allowing one to make a quasi-Newton step lowering the total energy.   \textcolor{blue}{The   iterations continue until the change in total energy per iteration becomes sufficiently small.} More specifically,  an approximate solution is   used as an initial guess  ${\bf w}^a$ to solve, using LU factorization~\cite{Sanderson2016-ht,itensor},  the linear  equations for the correction  $\text{d}{\bf w}^a={\bf u}^a-{\bf w}^a$  which are of the form 
@@ -435,14 +439,23 @@ Then, for a node located at position $\mathbf{x}_i$ in the central domain $\Omeg
  $\mathbf{x}_i^{(n)} = \mathbf{x}_i + \mathbf{R}_n = \mathbf{x}_i + \bar{\bf F}(\alpha ) \cdot \mathbf{t}_n.$ 
 Such correspondence ensures that the macroscopic deformation gradient $\bar{\bf F}(\alpha )$ is consistently applied across all periodic images of $\Omega_0$. After establishing the positions of all nodes across the nine domains (original domain $\Omega_0$ and its eight periodic images), we perform a Delaunay triangulation on the complete set of particles:
  $\mathcal{P} = \{\mathbf{x}_i : i \in \mathcal{I}_0\} \cup \{\mathbf{x}_i^{(n)} : i \in \mathcal{I}_0, n \neq \mathbf{0}\},$ 
-where $\mathcal{I}_0$ denotes the set of particle indices in the original domain and $\mathbf{0} = (0,0)$ corresponds to the null translation vector.  Using the obtained global  triangulation $\mathcal{T}$, we select  the  triangles that have at least one vertex belonging to the original domain $\Omega_0$. \textcolor{blue}{However, since triangles near periodic boundaries may be identified multiple times through different domain images, we enforce uniqueness by mapping all vertex indices to their representatives in $\Omega_0$ and using the sorted tuple of these representatives as a canonical identifier. A triangle is included in $\mathcal{T}_{\text{unique}}$ only upon its first encounter, ensuring each physical triangle is counted exactly once.} This  selection  procedure ensures that:
+where $\mathcal{I}_0$ denotes the set of particle indices in the original domain and $\mathbf{0} = (0,0)$ corresponds to the null translation vector.  Using the obtained global  triangulation $\mathcal{T}$, we select  the  triangles that have at least one vertex belonging to the original domain $\Omega_0$. 
+
+Note that  since triangles near periodic boundaries may be counted multiple times through different domain images, we need to ensure  uniqueness by mapping all vertex indices to their representatives in $\Omega_0$ and using the sorted tuple of these representatives as a canonical identifier. \textcolor{blue}{Specifically, a triangle is included in $\mathcal{T}_{\text{unique}}$ only upon its first encounter, ensuring each physical triangle is counted exactly once. The resulting computational mesh $\mathcal{T}_{\text{unique}}$  is illustrated in Fig.~\ref{sm:fig2}, where the central domain $\Omega_0$ (highlighted by the dark box) and the selected triangles connecting to its particles are shown.} Such  selection  procedure ensures that:
 (i) Each triangle in the computational mesh is counted exactly once, eliminating redundancy from the periodic extension; (ii)
  All triangles connected to the original domain are included, maintaining proper connectivity across periodic boundaries;
 (iii) The triangulation naturally incorporates the macroscopic deformation through the deformed positions of the periodic images.
- The selected set of triangles $\mathcal{T}_{\text{unique}}$ forms the computational mesh for the MTM calculations while implementing  the periodic boundary conditions and ensuring  consistency with the applied macroscopic deformation gradient $\bar{\bf F}(\alpha )$. 
+
+ The selected set of triangles $\mathcal{T}_{\text{unique}}$ was used as the computational mesh in the MTM based numerical experiments  ensuring both, compatibility  with   the periodic boundary conditions and  consistency with the applied macroscopic deformation gradient $\bar{\bf F}(\alpha )$.  
 
  
- 
+ \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{Figures_ordered/fig_2_SM.pdf}
+\caption{Illustration of the computational mesh $\mathcal{T}_{\text{unique}}$  obtained from the periodic Delaunay triangulation. The central computational domain $\Omega_0$ is highlighted by the dark red box. Only triangles with at least one vertex in $\Omega_0$ are selected for the mesh (shown by the thin lines), ensuring proper connectivity across periodic boundaries while avoiding redundant counting of triangles.
+}\label{sm:fig2}
+\end{figure}
+
  
 
 \bibliography{./formatted.bib}
@@ -456,4 +469,3 @@ where $\mathcal{I}_0$ denotes the set of particle indices in the original domain
 %https://www.scirp.org/journal/paperinformation.aspx?paperid=108300
 %
 %https://www.scientific.net/KEM.725.636
-
