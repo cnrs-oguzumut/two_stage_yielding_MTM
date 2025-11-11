@@ -220,30 +220,15 @@ superscriptaddress,notitlepage]{revtex4-1}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-%\title{An accurate computation of true stress in compression experiments in the presence of localized deformation}
-
-%\title{Self-induced  marginality in plastically deformed crystals}
-%\title{Two-stage yielding   of pristine crystals}
 \title{Quasi-amorphous crystals: Supplemental Material}
 \author{O.U. Salman}
 \affiliation{
 LSPM, CNRS UPR3407, Université Sorbonne Paris Nord, 93400, Villateneuse, France}
-%\affiliation{
-%Lund University, Department of Mechanical Engineering Sciences, Lund, Sweden}
-%\author{G. Tejedor}
-%\affiliation{
-%LSPM, CNRS UPR3407, Université Sorbonne Paris Nord, 93400, Villateneuse, France}
-%\author{A. Ahadi}
-%\affiliation{
-%Lund University, Department of Mechanical Engineering Sciences, Lund, Sweden}
-%\author{Nikolai  Gorbushin}
-%\affiliation{
-%LSPM, CNRS UPR3407, Université Sorbonne Paris Nord, 93400, Villateneuse, France}
-%\affiliation{
-%PMMH, CNRS UMR 7636 ESPCI ParisTech, 10 Rue Vauquelin, 75005, Paris, France}
-%\author{N. Gorbushin}
-%\affiliation{
-%PMMH, CNRS UMR 7636 ESPCI PSL, 10 Rue Vauquelin, 75005, Paris, France}
+\affiliation{
+Lund University, Department of Mechanical Engineering Sciences, SE-221 00 Lund, Sweden}
+\author{A. Ahadi}
+\affiliation{
+Lund University, Department of Mechanical Engineering Sciences, SE-221 00 Lund, Sweden}
 \author{ L. Truskinovsky}
 \affiliation{
 PMMH, CNRS UMR 7636 ESPCI PSL, 10 Rue Vauquelin, 75005, Paris, France}
@@ -284,7 +269,7 @@ where $ \det{\bf C}=1$. Given a generic metric $\bf C$, the task of finding a un
 Note  that  the action of   ${\bf m}_1$ is a reflection that ensures an acute angle between two lattice vectors of the square lattice $\mathbf{e}_i$ where $i=1,2$; the action of the matrix ${\bf m}_2$ is also a reflection as it swaps two lattice vectors $\mathbf{e}_i$. Both of these operations  belong to the point group and propagate the metric only inside the corresponding 'elastic  domain'  (Ericksen-Pitteri neighborhood)  composed of the four copies of the minimal  domain $\mathscr{D}$ ~\cite{pitteri2002continuum,Baggio2023}. Instead, the mapping defined by matrix ${\bf m}_3$ brings the metric outside the 'elastic domain'  and therefore represents a quantized analog of the macroscopic plastic strain.
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.32]{Figures_ordered/fig_1_SM.pdf}
+\includegraphics[scale=0.25]{Figures_ordered/fig_1_SM.pdf}
 \caption{Strain-energy density  in the configurational space $C_{11}, C_{22},C_{12}$ with  $\det{\bf C}=1$  stereographically projected on  the  Poincar\'e disk.
 %  $p^2 + q^2 < 1$ where 
 %$p = t(C_{11} - C_{22})/2$, 
@@ -367,13 +352,12 @@ which is prescribed on a triangulated  domain \(\Omega\).   The conditions of me
 %\begin{equation}
 %$\mathbf{P}= 2\mathbf{F} \mathbf{m} \frac{\partial w }{\partial \tilde{\bf C}}\mathbf{m}^T,$
 %\end{equation}
-\textcolor{blue}{
- $\mathbf{P}= 2\mathbf{F} \mathbf{m}{\bf \Sigma}\mathbf{m}^T,$ with  ${\bf \Sigma} = \begin{bmatrix}
+ $$\mathbf{P}= 2\mathbf{F} \mathbf{m}{\bf \Sigma}\mathbf{m}^T,$$ with  $${\bf \Sigma} = \begin{bmatrix}
 \frac{\partial w}{\partial \tilde{C}{11}} & \frac{1}{2}\frac{\partial w}{\partial \tilde{C}{12}} \\
 \frac{1}{2}\frac{\partial w}{\partial \tilde{C}{12}} & \frac{\partial w}{\partial \tilde{C}{22}}
-\end{bmatrix}.$ In the finite element representation these  equations reduce to 
+\end{bmatrix}.$$ In the finite element representation these  equations reduce to 
 %\begin{equation}
-$$\frac{\partial W}{\partial \mathbf{u}^{a}}=\int_{\Omega} \mathbf{P}(\mathbf{x};h) \nabla \mathcal{N}^{a} (\mathbf{x};h) d\mathbf{x} = 0.$$}
+$$\frac{\partial W}{\partial \mathbf{u}^{a}}=\int_{\Omega} \mathbf{P}(\mathbf{x};h) \nabla \mathcal{N}^{a} (\mathbf{x};h) d\mathbf{x} = 0.$$ 
 %\end{equation} 
 
 
@@ -440,25 +424,171 @@ Then, for a node located at position $\mathbf{x}_i$ in the central domain $\Omeg
 Such correspondence ensures that the macroscopic deformation gradient $\bar{\bf F}(\alpha )$ is consistently applied across all periodic images of $\Omega_0$. After establishing the positions of all nodes across the nine domains (original domain $\Omega_0$ and its eight periodic images), we perform a Delaunay triangulation on the complete set of particles:
  $\mathcal{P} = \{\mathbf{x}_i : i \in \mathcal{I}_0\} \cup \{\mathbf{x}_i^{(n)} : i \in \mathcal{I}_0, n \neq \mathbf{0}\},$ 
 where $\mathcal{I}_0$ denotes the set of particle indices in the original domain and $\mathbf{0} = (0,0)$ corresponds to the null translation vector.  Using the obtained global  triangulation $\mathcal{T}$, we select  the  triangles that have at least one vertex belonging to the original domain $\Omega_0$. 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.15]{Figures_ordered/fig_2_SM.pdf}
+\caption{ The periodicity unit of the computational mesh $\mathcal{T}_{\text{ch}}$  obtained by  periodic Delaunay triangulation. The central computational domain $\Omega_0$ is limited by the brown box. Only triangles with at least one vertex in $\Omega_0$ are selected for the mesh (shown by the thin lines), ensuring proper connectivity across periodic boundaries while avoiding redundant counting of triangles.
+}\label{sm:fig2}
+\end{figure}
 
-Note that  since triangles near periodic boundaries may be counted multiple times through different domain images, we need to ensure  uniqueness by mapping all vertex indices to their representatives in $\Omega_0$ and using the sorted tuple of these representatives as a canonical identifier. \textcolor{blue}{Specifically, a triangle is included in $\mathcal{T}_{\text{unique}}$ only upon its first encounter, ensuring each physical triangle is counted exactly once. The resulting computational mesh $\mathcal{T}_{\text{unique}}$  is illustrated in Fig.~\ref{sm:fig2}, where the central domain $\Omega_0$ (highlighted by the dark box) and the selected triangles connecting to its particles are shown.} Such  selection  procedure ensures that:
+
+Note that  since triangles near periodic boundaries may be counted multiple times through different domain images, we need to ensure  uniqueness by mapping all vertex indices to their representatives in $\Omega_0$ and using the sorted tuple of these representatives as a canonical identifier. 
+
+Specifically, a triangle is included in the chosen mesh $\mathcal{T}_{\text{ch}}$ only upon its first encounter, ensuring that each physical triangle is counted exactly once. The ensuing periodicity unit of the computational mesh $\mathcal{T}_{\text{ch}}$  is illustrated in Fig.~\ref{sm:fig2}, where we show the central domain $\Omega_0$ (limited by the brown box) together with   triangles associated with the nodes  constituting this domain.  Such  selection  procedure ensures that:
 (i) Each triangle in the computational mesh is counted exactly once, eliminating redundancy from the periodic extension; (ii)
  All triangles connected to the original domain are included, maintaining proper connectivity across periodic boundaries;
 (iii) The triangulation naturally incorporates the macroscopic deformation through the deformed positions of the periodic images.
 
- The selected set of triangles $\mathcal{T}_{\text{unique}}$ was used as the computational mesh in the MTM based numerical experiments  ensuring both, compatibility  with   the periodic boundary conditions and  consistency with the applied macroscopic deformation gradient $\bar{\bf F}(\alpha )$.  
+ The selected set of triangles $\mathcal{T}_{\text{ch}}$ was used as the computational mesh in the MTM based numerical experiments  ensuring both, compatibility  with   the periodic boundary conditions and  consistency with the applied macroscopic deformation gradient $\bar{\bf F}(\alpha )$.  
 
  
- \begin{figure}[h!]
-\centering
-\includegraphics[scale=0.2]{Figures_ordered/fig_2_SM.pdf}
-\caption{Illustration of the computational mesh $\mathcal{T}_{\text{unique}}$  obtained from the periodic Delaunay triangulation. The central computational domain $\Omega_0$ is highlighted by the dark red box. Only triangles with at least one vertex in $\Omega_0$ are selected for the mesh (shown by the thin lines), ensuring proper connectivity across periodic boundaries while avoiding redundant counting of triangles.
-}\label{sm:fig2}
-\end{figure}
-
+ 
  
 
-\bibliography{./formatted.bib}
+%\bibliography{./formatted.bib}
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{11}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Parry}(1998)}]{Parry1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~P.}\ \bibnamefont
+  {Parry}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Arch.
+  Rational Mech. Anal.}\ }\textbf {\bibinfo {volume} {145}},\ \bibinfo {pages}
+  {1} (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Conti}\ and\ \citenamefont
+  {Zanzotto}(2004)}]{Conti2004-sv}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Conti}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Zanzotto}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Arch. Ration. Mech. Anal.}\ }\textbf {\bibinfo {volume} {173}},\ \bibinfo
+  {pages} {69} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Engel}(2012)}]{Engel2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Engel}},\ }\href@noop {} {\emph {\bibinfo {title} {Geometric
+  Crystallography: An Axiomatic Introduction To Crystallography}}}\ (\bibinfo
+  {publisher} {Springer Science \& Business Media},\ \bibinfo {address}
+  {Dordrecht},\ \bibinfo {year} {2012})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pitteri}\ and\ \citenamefont
+  {Zanzotto}(2002)}]{pitteri2002continuum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Pitteri}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Zanzotto}},\ }\href@noop {} {\emph {\bibinfo {title} {Continuum models for
+  phase transitions and twinning in crystals}}}\ (\bibinfo  {publisher}
+  {Chapman and Hall/CRC},\ \bibinfo {address} {Boca Raton},\ \bibinfo {year}
+  {2002})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Baggio}\ \emph
+  {et~al.}(2023{\natexlab{a}})\citenamefont {Baggio}, \citenamefont {Salman},\
+  and\ \citenamefont {Truskinovsky}}]{Baggio2023}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Baggio}}, \bibinfo {author} {\bibfnamefont {O.~U.}\ \bibnamefont {Salman}},
+  \ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Truskinovsky}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Eur. J. Mech.
+  A/Solids}\ }\textbf {\bibinfo {volume} {99}},\ \bibinfo {pages} {104897}
+  (\bibinfo {year} {2023}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Baggio}\ \emph
+  {et~al.}(2023{\natexlab{b}})\citenamefont {Baggio}, \citenamefont {Salman},\
+  and\ \citenamefont {Truskinovsky}}]{Baggio2023-qu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Baggio}}, \bibinfo {author} {\bibfnamefont {O.~U.}\ \bibnamefont {Salman}},
+  \ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Truskinovsky}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. E}\
+  }\textbf {\bibinfo {volume} {107}},\ \bibinfo {pages} {025004} (\bibinfo
+  {year} {2023}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Irons}(1966)}]{Irons1966}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~M.}\ \bibnamefont
+  {Irons}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {AIAA
+  J.}\ }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages} {2035} (\bibinfo
+  {year} {1966})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bramble}\ and\ \citenamefont
+  {Zl\'{a}mal}(1970)}]{Bramble1970-oq}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~H.}\ \bibnamefont
+  {Bramble}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Zl\'{a}mal}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Math. Comp.}\ }\textbf {\bibinfo {volume} {24}},\ \bibinfo {pages} {809}
+  (\bibinfo {year} {1970})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bochkanov}\ and\ \citenamefont
+  {Bystritsky}(2013)}]{Bochkanov2013-lk}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Bochkanov}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Bystritsky}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Available from: www alglib net}\ } (\bibinfo {year} {2013})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Sanderson}\ and\ \citenamefont
+  {Curtin}(2016)}]{Sanderson2016-ht}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Sanderson}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Curtin}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J Open
+  Source Softw}\ }\textbf {\bibinfo {volume} {1}},\ \bibinfo {pages} {26}
+  (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fishman}\ \emph {et~al.}(2022)\citenamefont
+  {Fishman}, \citenamefont {White},\ and\ \citenamefont
+  {Stoudenmire}}]{Fishman2022-nj}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Fishman}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {White}}, \
+  and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Stoudenmire}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {SciPost Phys.
+  Codebases}\ ,\ \bibinfo {pages} {004}} (\bibinfo {year} {2022})}\BibitemShut
+  {NoStop}%
+\end{thebibliography}%
 
 
 
