@@ -18,21 +18,26 @@ The research bridges the gap between crystal plasticity and glass physics throug
 ## Authors
 
 - **O.U. Salman** - LSPM, CNRS UPR3407, Université Sorbonne Paris Nord
-- **A. Ahadi** - PMMH, CNRS UMR 7636 ESPCI PSL  
+- **A. Ahadi** - Division of Solid Mechanics, Lund University, Sweden
 - **L. Truskinovsky** - PMMH, CNRS UMR 7636 ESPCI PSL
 
 ## Repository Structure
 
 ```
 .
-├── README.md                 # This file
-├── two_stage_1.tex          # Main LaTeX manuscript
-├── formatted.bib            # Bibliography file
-└── figures_ordering/        # Directory containing all figures
-    ├── figure_01.png        # Figures 1-3 in PNG format
-    ├── figure_02.png
-    ├── figure_03.png
-    └── figure_04-17.pdf     # Figures 4-17 in PDF format
+├── README.md                    # This file
+├── two_stage_1.tex             # Main LaTeX manuscript
+├── formatted.bib               # Bibliography file
+└── Figures_ordered/            # Directory containing all figures
+    ├── Fig1.pdf                # Figure 1 - Stress-strain and microstructure evolution
+    ├── fig2.pdf                # Figure 2 - (note: lowercase naming)
+    ├── Fig3.pdf                # Figure 3
+    ├── Fig4.pdf                # Figure 4 - Energy drop statistics
+    ├── Fig5.pdf                # Figure 5 - Poincaré disk visualization
+    ├── Fig6.pdf                # Figure 6 - Deformed crystal structure
+    ├── Fig7.pdf                # Figure 7 - Energy landscape
+    ├── fig_1_SM.pdf            # Supplementary Material Figure 1
+    └── fig_2_SM.pdf            # Supplementary Material Figure 2
 ```
 
 ## Compilation Instructions
