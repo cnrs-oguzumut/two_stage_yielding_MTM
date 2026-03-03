@@ -25,19 +25,34 @@ The research bridges the gap between crystal plasticity and glass physics throug
 
 ```
 .
-├── README.md                    # This file
-├── two_stage_1.tex             # Main LaTeX manuscript
-├── formatted.bib               # Bibliography file
-└── Figures_ordered/            # Directory containing all figures
-    ├── Fig1.pdf                # Figure 1 - Stress-strain and microstructure evolution
-    ├── fig2.pdf                # Figure 2 - (note: lowercase naming)
-    ├── Fig3.pdf                # Figure 3
-    ├── Fig4.pdf                # Figure 4 - Energy drop statistics
-    ├── Fig5.pdf                # Figure 5 - Poincaré disk visualization
-    ├── Fig6.pdf                # Figure 6 - Deformed crystal structure
-    ├── Fig7.pdf                # Figure 7 - Energy landscape
-    ├── fig_1_SM.pdf            # Supplementary Material Figure 1
-    └── fig_2_SM.pdf            # Supplementary Material Figure 2
+├── README.md                        # This file
+├── two_stage_v2_final.tex           # Main LaTeX manuscript (final version)
+├── SM.tex                           # Supplemental Material LaTeX source
+├── two_stage_v2_finalNotes.bib      # Bibliography for main manuscript
+├── SMNotes.bib                      # Bibliography for Supplemental Material
+├── Figures/                         # Main manuscript figures
+│   ├── Fig1.pdf                     # Figure 1 - Stress-strain and microstructure evolution
+│   ├── Fig2.pdf                     # Figure 2 - Energy landscape / Poincaré disk
+│   ├── Fig3.pdf                     # Figure 3
+│   ├── Fig4.pdf                     # Figure 4 - Energy drop statistics
+│   ├── Fig5.pdf                     # Figure 5
+│   ├── Fig6.pdf                     # Figure 6 - Deformed crystal structure
+│   ├── Fig7.pdf                     # Figure 7 - Avalanche size distributions
+│   ├── Fig8-a.pdf                   # Figure 8 (a) - Poincaré space pre-yield
+│   └── Fig8-b.pdf                   # Figure 8 (b) - Poincaré space post-yield
+└── fig_sm/                          # Supplemental Material figures
+    ├── Fig1.pdf                     # SM Figure 1 - Energy density in configurational space
+    ├── Fig2.pdf                     # SM Figure 2 - Periodic mesh
+    ├── Fig3-a.pdf                   # SM Figure 3 (a) - FSS quality map pre-yield
+    ├── Fig3-b.pdf                   # SM Figure 3 (b) - FSS quality map post-yield
+    ├── Fig4-a.pdf                   # SM Figure 4 (a) - Data collapse stress pre-yield
+    ├── Fig4-b.pdf                   # SM Figure 4 (b) - Data collapse stress post-yield
+    ├── Fig4-c.pdf                   # SM Figure 4 (c) - Data collapse energy pre-yield
+    ├── Fig4-d.pdf                   # SM Figure 4 (d) - Data collapse energy post-yield
+    ├── Fig5-a.pdf                   # SM Figure 5 (a) - Plastic morphology pre-yield
+    ├── Fig5-b.pdf                   # SM Figure 5 (b) - Plastic morphology post-yield
+    ├── Fig6-a.pdf                   # SM Figure 6 (a) - 2D energy histogram pre-yield
+    └── Fig6-b.pdf                   # SM Figure 6 (b) - 2D energy histogram post-yield
 ```
 
 ## Compilation Instructions
