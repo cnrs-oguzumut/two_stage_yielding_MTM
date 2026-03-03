@@ -28,8 +28,9 @@ The research bridges the gap between crystal plasticity and glass physics throug
 ├── README.md                        # This file
 ├── two_stage_v2_final.tex           # Main LaTeX manuscript (final version)
 ├── SM.tex                           # Supplemental Material LaTeX source
-├── two_stage_v2_finalNotes.bib      # Bibliography for main manuscript
-├── SMNotes.bib                      # Bibliography for Supplemental Material
+├── formatted.bib                    # Full bibliography database
+├── two_stage_v2_finalNotes.bib      # Bibliography support file for main manuscript
+├── SMNotes.bib                      # Bibliography support file for Supplemental Material
 ├── Figures/                         # Main manuscript figures
 │   ├── Fig1.pdf                     # Figure 1 - Stress-strain and microstructure evolution
 │   ├── Fig2.pdf                     # Figure 2 - Energy landscape / Poincaré disk
